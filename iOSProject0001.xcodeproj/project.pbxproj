@@ -10,9 +10,12 @@
 		17C273FC1F9C8793003A226F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C273FB1F9C8793003A226F /* main.m */; };
 		17C273FF1F9C8793003A226F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C273FE1F9C8793003A226F /* AppDelegate.m */; };
 		17C274021F9C8793003A226F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C274011F9C8793003A226F /* ViewController.m */; };
-		17C274051F9C8793003A226F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C274031F9C8793003A226F /* Main.storyboard */; };
 		17C274071F9C8793003A226F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C274061F9C8793003A226F /* Assets.xcassets */; };
 		17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C274081F9C8793003A226F /* LaunchScreen.storyboard */; };
+		17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2741A1F9CB590003A226F /* ZJLNavigationController.m */; };
+		17C2741E1F9CB590003A226F /* ZJLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2741C1F9CB590003A226F /* ZJLTabBarController.m */; };
+		17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C274201F9CB678003A226F /* ZJLTabBar.m */; };
+		17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +25,18 @@
 		17C273FE1F9C8793003A226F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17C274001F9C8793003A226F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		17C274011F9C8793003A226F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		17C274041F9C8793003A226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17C274061F9C8793003A226F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C274091F9C8793003A226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17C2740B1F9C8793003A226F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C274191F9CB590003A226F /* ZJLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLNavigationController.h; sourceTree = "<group>"; };
+		17C2741A1F9CB590003A226F /* ZJLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLNavigationController.m; sourceTree = "<group>"; };
+		17C2741B1F9CB590003A226F /* ZJLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLTabBarController.h; sourceTree = "<group>"; };
+		17C2741C1F9CB590003A226F /* ZJLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTabBarController.m; sourceTree = "<group>"; };
+		17C2741F1F9CB678003A226F /* ZJLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLTabBar.h; sourceTree = "<group>"; };
+		17C274201F9CB678003A226F /* ZJLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTabBar.m; sourceTree = "<group>"; };
+		17C274221F9CB6EA003A226F /* UIView+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJLExtension.h"; sourceTree = "<group>"; };
+		17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJLExtension.m"; sourceTree = "<group>"; };
+		17ECE2351F9CD7470004D182 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +69,8 @@
 		17C273F91F9C8793003A226F /* iOSProject0001 */ = {
 			isa = PBXGroup;
 			children = (
-				17C273FD1F9C8793003A226F /* AppDelegate.h */,
-				17C273FE1F9C8793003A226F /* AppDelegate.m */,
-				17C274001F9C8793003A226F /* ViewController.h */,
-				17C274011F9C8793003A226F /* ViewController.m */,
-				17C274031F9C8793003A226F /* Main.storyboard */,
-				17C274061F9C8793003A226F /* Assets.xcassets */,
-				17C274081F9C8793003A226F /* LaunchScreen.storyboard */,
-				17C2740B1F9C8793003A226F /* Info.plist */,
+				17C274181F9CB590003A226F /* ProjectFrame */,
+				17C274111F9C923C003A226F /* Classes */,
 				17C273FA1F9C8793003A226F /* Supporting Files */,
 			);
 			path = iOSProject0001;
@@ -74,9 +79,39 @@
 		17C273FA1F9C8793003A226F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				17C273FB1F9C8793003A226F /* main.m */,
+				17C274061F9C8793003A226F /* Assets.xcassets */,
+				17C274081F9C8793003A226F /* LaunchScreen.storyboard */,
+				17C2740B1F9C8793003A226F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17C274111F9C923C003A226F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17C273FD1F9C8793003A226F /* AppDelegate.h */,
+				17C273FE1F9C8793003A226F /* AppDelegate.m */,
+				17C274001F9C8793003A226F /* ViewController.h */,
+				17C274011F9C8793003A226F /* ViewController.m */,
+				17C273FB1F9C8793003A226F /* main.m */,
+				17ECE2351F9CD7470004D182 /* PrefixHeader.pch */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		17C274181F9CB590003A226F /* ProjectFrame */ = {
+			isa = PBXGroup;
+			children = (
+				17C274221F9CB6EA003A226F /* UIView+ZJLExtension.h */,
+				17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */,
+				17C2741F1F9CB678003A226F /* ZJLTabBar.h */,
+				17C274201F9CB678003A226F /* ZJLTabBar.m */,
+				17C274191F9CB590003A226F /* ZJLNavigationController.h */,
+				17C2741A1F9CB590003A226F /* ZJLNavigationController.m */,
+				17C2741B1F9CB590003A226F /* ZJLTabBarController.h */,
+				17C2741C1F9CB590003A226F /* ZJLTabBarController.m */,
+			);
+			path = ProjectFrame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +140,7 @@
 		17C273EF1F9C8793003A226F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZJL;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = NowOrNever;
 				TargetAttributes = {
@@ -140,7 +176,6 @@
 			files = (
 				17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */,
 				17C274071F9C8793003A226F /* Assets.xcassets in Resources */,
-				17C274051F9C8793003A226F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */,
+				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
+				17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */,
 				17C274021F9C8793003A226F /* ViewController.m in Sources */,
 				17C273FF1F9C8793003A226F /* AppDelegate.m in Sources */,
+				17C2741E1F9CB590003A226F /* ZJLTabBarController.m in Sources */,
 				17C273FC1F9C8793003A226F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		17C274031F9C8793003A226F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17C274041F9C8793003A226F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		17C274081F9C8793003A226F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -273,7 +304,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 32C6F7YM75;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSProject0001/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSProject0001/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JinlongZhang.iOSProject0001;
@@ -285,7 +318,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 32C6F7YM75;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSProject0001/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSProject0001/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JinlongZhang.iOSProject0001;
@@ -312,6 +347,7 @@
 				17C274101F9C8793003A226F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
