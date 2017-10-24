@@ -24,6 +24,9 @@
         [recordBtn addTarget:self action:@selector(recordBtnDidClick) forControlEvents:UIControlEventTouchUpInside];
         self.recordBtn = recordBtn;
         [self addSubview:recordBtn];
+        
+        //设置tabbar背景图片
+        self.backgroundImage = [UIImage imageNamed:@"tabbar_light"];
     }
     return self;
 }

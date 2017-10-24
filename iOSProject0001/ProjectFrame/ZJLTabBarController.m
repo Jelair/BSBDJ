@@ -10,7 +10,10 @@
 #import "ZJLNavigationController.h"
 #import "ZJLTabBar.h"
 
-#import "ViewController.h"
+#import "ZJLEssenceViewController.h"
+#import "ZJLNewViewController.h"
+#import "ZJLFollowViewController.h"
+#import "ZJLMeViewController.h"
 
 @interface ZJLTabBarController ()<ZJLTabBarDelegate>
 
@@ -44,17 +47,17 @@
 }
 
 - (void)setUpAllChildVc{
-    ViewController *task = [[ViewController alloc] init];
-    [self setUpOneChildVcWithVc:task image:@"tabBar_essence" selectImage:@"tabBar_essence_click" title:@"精选"];
+    ZJLEssenceViewController *essence = [[ZJLEssenceViewController alloc] init];
+    [self setUpOneChildVcWithVc:essence image:@"tabBar_essence" selectImage:@"tabBar_essence_click" title:@"精选"];
     
-    ViewController *message = [[ViewController alloc] init];
-    [self setUpOneChildVcWithVc:message image:@"tabBar_new" selectImage:@"tabBar_new_click" title:@"新帖"];
+    ZJLNewViewController *newC = [[ZJLNewViewController alloc] init];
+    [self setUpOneChildVcWithVc:newC image:@"tabBar_new" selectImage:@"tabBar_new_click" title:@"新帖"];
     
-    ViewController *contract = [[ViewController alloc] init];
-    [self setUpOneChildVcWithVc:contract image:@"tabBar_friendTrends" selectImage:@"tabBar_friendTrends_click" title:@"关注"];
+    ZJLFollowViewController *follow = [[ZJLFollowViewController alloc] init];
+    [self setUpOneChildVcWithVc:follow image:@"tabBar_friendTrends" selectImage:@"tabBar_friendTrends_click" title:@"关注"];
     
-    ViewController *setting = [[ViewController alloc] init];
-    [self setUpOneChildVcWithVc:setting image:@"tabBar_me" selectImage:@"tabBar_me_click" title:@"我"];
+    ZJLMeViewController *me = [[ZJLMeViewController alloc] init];
+    [self setUpOneChildVcWithVc:me image:@"tabBar_me" selectImage:@"tabBar_me_click" title:@"我"];
 }
 
 
@@ -73,7 +76,7 @@
     UIImage *mSelectImage = [[UIImage imageNamed:selectImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vc.tabBarItem.selectedImage = mSelectImage;
     vc.tabBarItem.title = title;
-    vc.navigationItem.title = title;
+    //vc.navigationItem.title = title;
     [self addChildViewController:nav];
 }
 
