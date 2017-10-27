@@ -22,6 +22,10 @@
 		17C2741E1F9CB590003A226F /* ZJLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2741C1F9CB590003A226F /* ZJLTabBarController.m */; };
 		17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C274201F9CB678003A226F /* ZJLTabBar.m */; };
 		17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */; };
+		17E37A141FA2E07E00531AD8 /* ZJLFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E37A131FA2E07E00531AD8 /* ZJLFollowViewController.xib */; };
+		17E37A201FA2E69C00531AD8 /* ZJLLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E37A1E1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.m */; };
+		17E37A211FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E37A1F1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib */; };
+		17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E37A231FA2FA8000531AD8 /* ZJLQuickButton.m */; };
 		17E6EC211F9F92EB00051F0A /* ZJLRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E6EC201F9F92EB00051F0A /* ZJLRecommendViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,12 @@
 		17C274201F9CB678003A226F /* ZJLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTabBar.m; sourceTree = "<group>"; };
 		17C274221F9CB6EA003A226F /* UIView+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJLExtension.h"; sourceTree = "<group>"; };
 		17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJLExtension.m"; sourceTree = "<group>"; };
+		17E37A131FA2E07E00531AD8 /* ZJLFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLFollowViewController.xib; sourceTree = "<group>"; };
+		17E37A1D1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLLoginRegisterViewController.h; sourceTree = "<group>"; };
+		17E37A1E1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLLoginRegisterViewController.m; sourceTree = "<group>"; };
+		17E37A1F1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		17E37A221FA2FA8000531AD8 /* ZJLQuickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLQuickButton.h; sourceTree = "<group>"; };
+		17E37A231FA2FA8000531AD8 /* ZJLQuickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLQuickButton.m; sourceTree = "<group>"; };
 		17E6EC1F1F9F92EB00051F0A /* ZJLRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRecommendViewController.h; sourceTree = "<group>"; };
 		17E6EC201F9F92EB00051F0A /* ZJLRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLRecommendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,16 +82,11 @@
 		171F75221F9E3B550002FCDB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				171F75351F9E3D810002FCDB /* ZJLEssenceViewController.h */,
-				171F75361F9E3D810002FCDB /* ZJLEssenceViewController.m */,
-				171F75321F9E3D630002FCDB /* ZJLNewViewController.h */,
-				171F75331F9E3D630002FCDB /* ZJLNewViewController.m */,
-				171F753B1F9E3F720002FCDB /* ZJLFollowViewController.h */,
-				171F753C1F9E3F720002FCDB /* ZJLFollowViewController.m */,
-				171F75381F9E3DA50002FCDB /* ZJLMeViewController.h */,
-				171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */,
-				17E6EC1F1F9F92EB00051F0A /* ZJLRecommendViewController.h */,
-				17E6EC201F9F92EB00051F0A /* ZJLRecommendViewController.m */,
+				17E37A171FA2E56300531AD8 /* Essence */,
+				17E37A161FA2E55700531AD8 /* News */,
+				17E37A151FA2E54000531AD8 /* Follow */,
+				17E37A181FA2E56E00531AD8 /* Me */,
+				17E37A191FA2E57700531AD8 /* Recommend */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -139,18 +144,93 @@
 		17C274181F9CB590003A226F /* ProjectFrame */ = {
 			isa = PBXGroup;
 			children = (
+				17E37A1C1FA2E67100531AD8 /* ViewController */,
+				17E37A1B1FA2E66900531AD8 /* View */,
+				17E37A1A1FA2E61D00531AD8 /* Categories */,
+			);
+			path = ProjectFrame;
+			sourceTree = "<group>";
+		};
+		17E37A151FA2E54000531AD8 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				171F753B1F9E3F720002FCDB /* ZJLFollowViewController.h */,
+				171F753C1F9E3F720002FCDB /* ZJLFollowViewController.m */,
+				17E37A131FA2E07E00531AD8 /* ZJLFollowViewController.xib */,
+			);
+			name = Follow;
+			sourceTree = "<group>";
+		};
+		17E37A161FA2E55700531AD8 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				171F75321F9E3D630002FCDB /* ZJLNewViewController.h */,
+				171F75331F9E3D630002FCDB /* ZJLNewViewController.m */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		17E37A171FA2E56300531AD8 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				171F75351F9E3D810002FCDB /* ZJLEssenceViewController.h */,
+				171F75361F9E3D810002FCDB /* ZJLEssenceViewController.m */,
+			);
+			name = Essence;
+			sourceTree = "<group>";
+		};
+		17E37A181FA2E56E00531AD8 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				171F75381F9E3DA50002FCDB /* ZJLMeViewController.h */,
+				171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		17E37A191FA2E57700531AD8 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				17E6EC1F1F9F92EB00051F0A /* ZJLRecommendViewController.h */,
+				17E6EC201F9F92EB00051F0A /* ZJLRecommendViewController.m */,
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
+		17E37A1A1FA2E61D00531AD8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				171F751F1F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.h */,
+				171F75201F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m */,
 				17C274221F9CB6EA003A226F /* UIView+ZJLExtension.h */,
 				17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		17E37A1B1FA2E66900531AD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				17C2741F1F9CB678003A226F /* ZJLTabBar.h */,
 				17C274201F9CB678003A226F /* ZJLTabBar.m */,
+				17E37A221FA2FA8000531AD8 /* ZJLQuickButton.h */,
+				17E37A231FA2FA8000531AD8 /* ZJLQuickButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		17E37A1C1FA2E67100531AD8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				17C274191F9CB590003A226F /* ZJLNavigationController.h */,
 				17C2741A1F9CB590003A226F /* ZJLNavigationController.m */,
 				17C2741B1F9CB590003A226F /* ZJLTabBarController.h */,
 				17C2741C1F9CB590003A226F /* ZJLTabBarController.m */,
-				171F751F1F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.h */,
-				171F75201F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m */,
+				17E37A1D1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.h */,
+				17E37A1E1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.m */,
+				17E37A1F1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib */,
 			);
-			path = ProjectFrame;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +295,8 @@
 			files = (
 				17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */,
 				17C274071F9C8793003A226F /* Assets.xcassets in Resources */,
+				17E37A211FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib in Resources */,
+				17E37A141FA2E07E00531AD8 /* ZJLFollowViewController.xib in Resources */,
 				171F752C1F9E3B550002FCDB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +312,7 @@
 				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
 				171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */,
 				171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */,
+				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
 				171F752E1F9E3B550002FCDB /* ViewController.m in Sources */,
 				171F75341F9E3D630002FCDB /* ZJLNewViewController.m in Sources */,
 				171F753D1F9E3F720002FCDB /* ZJLFollowViewController.m in Sources */,
@@ -238,6 +321,7 @@
 				17E6EC211F9F92EB00051F0A /* ZJLRecommendViewController.m in Sources */,
 				17C2741E1F9CB590003A226F /* ZJLTabBarController.m in Sources */,
 				171F752D1F9E3B550002FCDB /* main.m in Sources */,
+				17E37A201FA2E69C00531AD8 /* ZJLLoginRegisterViewController.m in Sources */,
 				171F75211F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

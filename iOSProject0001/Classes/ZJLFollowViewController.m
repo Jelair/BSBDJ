@@ -8,6 +8,7 @@
 
 #import "ZJLFollowViewController.h"
 #import "ZJLRecommendViewController.h"
+#import "ZJLLoginRegisterViewController.h"
 
 @interface ZJLFollowViewController ()
 
@@ -26,6 +27,11 @@
 - (void)navleftbtn_click{
     ZJLRecommendViewController *vc = [[ZJLRecommendViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)loginAndRegister:(id)sender {
+    ZJLLoginRegisterViewController *vc = [[ZJLLoginRegisterViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
