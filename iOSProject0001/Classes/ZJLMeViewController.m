@@ -7,6 +7,7 @@
 //
 
 #import "ZJLMeViewController.h"
+#import "ZJLMeCell.h"
 
 @interface ZJLMeViewController ()
 
@@ -14,8 +15,22 @@
 
 @implementation ZJLMeViewController
 
+- (instancetype)init{
+    return [super initWithStyle:UITableViewStyleGrouped];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = ZJLMargin;
+    self.tableView.contentInset = UIEdgeInsetsMake(ZJLMargin-35, 0, 0, 0);
+    
+    UIView *footView = [[UIView alloc] init];
+    footView.backgroundColor = [UIColor redColor];
+    footView.height = 200;
+    self.tableView.tableFooterView = footView;
+    
     // Do any additional setup after loading the view.
     self.view.backgroundColor = ZJLCommonBg;
     self.navigationItem.title = @"我的";
@@ -31,6 +46,32 @@
 
 - (void)settingBtn_click{
     
+}
+
+#pragma mark -- datasource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString* ID = @"me";
+    ZJLMeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[ZJLMeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    
+    if (indexPath.section == 0) {
+        cell.textLabel.text = @"登录/注册";
+        cell.imageView.image = [UIImage imageNamed:@"setup-head-default"];
+    }else{
+        cell.textLabel.text = @"离线加载";
+    }
+    
+    return cell;
 }
 
 @end

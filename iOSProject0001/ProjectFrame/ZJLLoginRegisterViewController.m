@@ -27,6 +27,7 @@
 - (IBAction)close:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (IBAction)showLoginOrRegister:(UIButton *)sender {
     [self.view endEditing:YES];
     if (!sender.selected) {

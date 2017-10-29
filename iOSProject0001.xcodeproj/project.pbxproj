@@ -16,6 +16,10 @@
 		171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F75361F9E3D810002FCDB /* ZJLEssenceViewController.m */; };
 		171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */; };
 		171F753D1F9E3F720002FCDB /* ZJLFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F753C1F9E3F720002FCDB /* ZJLFollowViewController.m */; };
+		174478CF1FA5E3D9008965E1 /* ZJLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478CE1FA5E3D9008965E1 /* ZJLTextField.m */; };
+		174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D11FA5E5DC008965E1 /* UITextField+ZJLExtension.m */; };
+		174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D51FA5F41D008965E1 /* ZJLMeCell.m */; };
+		174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D91FA5F537008965E1 /* ZJLConst.m */; };
 		17C274071F9C8793003A226F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C274061F9C8793003A226F /* Assets.xcassets */; };
 		17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C274081F9C8793003A226F /* LaunchScreen.storyboard */; };
 		17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2741A1F9CB590003A226F /* ZJLNavigationController.m */; };
@@ -47,6 +51,14 @@
 		171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeViewController.m; sourceTree = "<group>"; };
 		171F753B1F9E3F720002FCDB /* ZJLFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLFollowViewController.h; sourceTree = "<group>"; };
 		171F753C1F9E3F720002FCDB /* ZJLFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLFollowViewController.m; sourceTree = "<group>"; };
+		174478CD1FA5E3D9008965E1 /* ZJLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLTextField.h; sourceTree = "<group>"; };
+		174478CE1FA5E3D9008965E1 /* ZJLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTextField.m; sourceTree = "<group>"; };
+		174478D01FA5E5DC008965E1 /* UITextField+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZJLExtension.h"; sourceTree = "<group>"; };
+		174478D11FA5E5DC008965E1 /* UITextField+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZJLExtension.m"; sourceTree = "<group>"; };
+		174478D41FA5F41D008965E1 /* ZJLMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLMeCell.h; sourceTree = "<group>"; };
+		174478D51FA5F41D008965E1 /* ZJLMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeCell.m; sourceTree = "<group>"; };
+		174478D81FA5F537008965E1 /* ZJLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLConst.h; sourceTree = "<group>"; };
+		174478D91FA5F537008965E1 /* ZJLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLConst.m; sourceTree = "<group>"; };
 		17C273F71F9C8793003A226F /* iOSProject0001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject0001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C274061F9C8793003A226F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C274091F9C8793003A226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,6 +117,24 @@
 			path = SystemFile;
 			sourceTree = "<group>";
 		};
+		174478D31FA5F3F7008965E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				174478D41FA5F41D008965E1 /* ZJLMeCell.h */,
+				174478D51FA5F41D008965E1 /* ZJLMeCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		174478D71FA5F51B008965E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				174478D81FA5F537008965E1 /* ZJLConst.h */,
+				174478D91FA5F537008965E1 /* ZJLConst.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		17C273EE1F9C8793003A226F = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +174,7 @@
 		17C274181F9CB590003A226F /* ProjectFrame */ = {
 			isa = PBXGroup;
 			children = (
+				174478D71FA5F51B008965E1 /* Common */,
 				17E37A1C1FA2E67100531AD8 /* ViewController */,
 				17E37A1B1FA2E66900531AD8 /* View */,
 				17E37A1A1FA2E61D00531AD8 /* Categories */,
@@ -182,6 +213,7 @@
 		17E37A181FA2E56E00531AD8 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				174478D31FA5F3F7008965E1 /* View */,
 				171F75381F9E3DA50002FCDB /* ZJLMeViewController.h */,
 				171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */,
 			);
@@ -204,6 +236,8 @@
 				171F75201F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m */,
 				17C274221F9CB6EA003A226F /* UIView+ZJLExtension.h */,
 				17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */,
+				174478D01FA5E5DC008965E1 /* UITextField+ZJLExtension.h */,
+				174478D11FA5E5DC008965E1 /* UITextField+ZJLExtension.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -211,6 +245,8 @@
 		17E37A1B1FA2E66900531AD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				174478CD1FA5E3D9008965E1 /* ZJLTextField.h */,
+				174478CE1FA5E3D9008965E1 /* ZJLTextField.m */,
 				17C2741F1F9CB678003A226F /* ZJLTabBar.h */,
 				17C274201F9CB678003A226F /* ZJLTabBar.m */,
 				17E37A221FA2FA8000531AD8 /* ZJLQuickButton.h */,
@@ -309,7 +345,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */,
+				174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */,
 				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
+				174478CF1FA5E3D9008965E1 /* ZJLTextField.m in Sources */,
+				174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */,
+				174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */,
 				171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */,
 				171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */,
 				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
