@@ -20,6 +20,12 @@
 		174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D11FA5E5DC008965E1 /* UITextField+ZJLExtension.m */; };
 		174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D51FA5F41D008965E1 /* ZJLMeCell.m */; };
 		174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D91FA5F537008965E1 /* ZJLConst.m */; };
+		174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478DC1FA5FF65008965E1 /* ZJLMeFootview.m */; };
+		174478E11FA60EAE008965E1 /* ZJLMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478E01FA60EAE008965E1 /* ZJLMeSquare.m */; };
+		176551561FA75F2200106FA9 /* ZJLMeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 176551551FA75F2200106FA9 /* ZJLMeSquareButton.m */; };
+		1765515A1FA7688400106FA9 /* ZJLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176551581FA7688400106FA9 /* ZJLWebViewController.m */; };
+		1765515B1FA7688400106FA9 /* ZJLWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176551591FA7688400106FA9 /* ZJLWebViewController.xib */; };
+		1765515E1FA770ED00106FA9 /* ZJLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1765515D1FA770ED00106FA9 /* ZJLSettingViewController.m */; };
 		17C274071F9C8793003A226F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C274061F9C8793003A226F /* Assets.xcassets */; };
 		17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C274081F9C8793003A226F /* LaunchScreen.storyboard */; };
 		17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2741A1F9CB590003A226F /* ZJLNavigationController.m */; };
@@ -31,9 +37,11 @@
 		17E37A211FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E37A1F1FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib */; };
 		17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E37A231FA2FA8000531AD8 /* ZJLQuickButton.m */; };
 		17E6EC211F9F92EB00051F0A /* ZJLRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E6EC201F9F92EB00051F0A /* ZJLRecommendViewController.m */; };
+		8BEB7FD5B392CDE5A2B9D116 /* libPods-iOSProject0001.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F13F3BA766748C68EEAC7ED /* libPods-iOSProject0001.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F13F3BA766748C68EEAC7ED /* libPods-iOSProject0001.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSProject0001.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		171F751F1F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZJLExtension.h"; sourceTree = "<group>"; };
 		171F75201F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZJLExtension.m"; sourceTree = "<group>"; };
 		171F75241F9E3B550002FCDB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +67,17 @@
 		174478D51FA5F41D008965E1 /* ZJLMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeCell.m; sourceTree = "<group>"; };
 		174478D81FA5F537008965E1 /* ZJLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLConst.h; sourceTree = "<group>"; };
 		174478D91FA5F537008965E1 /* ZJLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLConst.m; sourceTree = "<group>"; };
+		174478DB1FA5FF65008965E1 /* ZJLMeFootview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLMeFootview.h; sourceTree = "<group>"; };
+		174478DC1FA5FF65008965E1 /* ZJLMeFootview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeFootview.m; sourceTree = "<group>"; };
+		174478DF1FA60EAE008965E1 /* ZJLMeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLMeSquare.h; sourceTree = "<group>"; };
+		174478E01FA60EAE008965E1 /* ZJLMeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeSquare.m; sourceTree = "<group>"; };
+		176551541FA75F2200106FA9 /* ZJLMeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLMeSquareButton.h; sourceTree = "<group>"; };
+		176551551FA75F2200106FA9 /* ZJLMeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeSquareButton.m; sourceTree = "<group>"; };
+		176551571FA7688400106FA9 /* ZJLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLWebViewController.h; sourceTree = "<group>"; };
+		176551581FA7688400106FA9 /* ZJLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLWebViewController.m; sourceTree = "<group>"; };
+		176551591FA7688400106FA9 /* ZJLWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLWebViewController.xib; sourceTree = "<group>"; };
+		1765515C1FA770ED00106FA9 /* ZJLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLSettingViewController.h; sourceTree = "<group>"; };
+		1765515D1FA770ED00106FA9 /* ZJLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLSettingViewController.m; sourceTree = "<group>"; };
 		17C273F71F9C8793003A226F /* iOSProject0001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject0001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C274061F9C8793003A226F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C274091F9C8793003A226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +97,8 @@
 		17E37A231FA2FA8000531AD8 /* ZJLQuickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLQuickButton.m; sourceTree = "<group>"; };
 		17E6EC1F1F9F92EB00051F0A /* ZJLRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRecommendViewController.h; sourceTree = "<group>"; };
 		17E6EC201F9F92EB00051F0A /* ZJLRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLRecommendViewController.m; sourceTree = "<group>"; };
+		BE50DB4F785F55E0DA4A7B43 /* Pods-iOSProject0001.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProject0001.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProject0001/Pods-iOSProject0001.debug.xcconfig"; sourceTree = "<group>"; };
+		F7FA4E8EFEE42E9315A20070 /* Pods-iOSProject0001.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProject0001.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProject0001/Pods-iOSProject0001.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEB7FD5B392CDE5A2B9D116 /* libPods-iOSProject0001.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +144,10 @@
 			children = (
 				174478D41FA5F41D008965E1 /* ZJLMeCell.h */,
 				174478D51FA5F41D008965E1 /* ZJLMeCell.m */,
+				174478DB1FA5FF65008965E1 /* ZJLMeFootview.h */,
+				174478DC1FA5FF65008965E1 /* ZJLMeFootview.m */,
+				176551541FA75F2200106FA9 /* ZJLMeSquareButton.h */,
+				176551551FA75F2200106FA9 /* ZJLMeSquareButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -135,11 +161,22 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		174478DE1FA60E91008965E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				174478DF1FA60EAE008965E1 /* ZJLMeSquare.h */,
+				174478E01FA60EAE008965E1 /* ZJLMeSquare.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		17C273EE1F9C8793003A226F = {
 			isa = PBXGroup;
 			children = (
 				17C273F91F9C8793003A226F /* iOSProject0001 */,
 				17C273F81F9C8793003A226F /* Products */,
+				A6A4E8E91C3F95B9C88DE74B /* Pods */,
+				87A69589ABBB122989AD8112 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,9 +250,15 @@
 		17E37A181FA2E56E00531AD8 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				174478DE1FA60E91008965E1 /* Model */,
 				174478D31FA5F3F7008965E1 /* View */,
 				171F75381F9E3DA50002FCDB /* ZJLMeViewController.h */,
 				171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */,
+				176551571FA7688400106FA9 /* ZJLWebViewController.h */,
+				176551581FA7688400106FA9 /* ZJLWebViewController.m */,
+				176551591FA7688400106FA9 /* ZJLWebViewController.xib */,
+				1765515C1FA770ED00106FA9 /* ZJLSettingViewController.h */,
+				1765515D1FA770ED00106FA9 /* ZJLSettingViewController.m */,
 			);
 			name = Me;
 			sourceTree = "<group>";
@@ -269,6 +312,23 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		87A69589ABBB122989AD8112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F13F3BA766748C68EEAC7ED /* libPods-iOSProject0001.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6A4E8E91C3F95B9C88DE74B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE50DB4F785F55E0DA4A7B43 /* Pods-iOSProject0001.debug.xcconfig */,
+				F7FA4E8EFEE42E9315A20070 /* Pods-iOSProject0001.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17C2740E1F9C8793003A226F /* Build configuration list for PBXNativeTarget "iOSProject0001" */;
 			buildPhases = (
+				7FD8E8D5726483E672148177 /* [CP] Check Pods Manifest.lock */,
 				17C273F31F9C8793003A226F /* Sources */,
 				17C273F41F9C8793003A226F /* Frameworks */,
 				17C273F51F9C8793003A226F /* Resources */,
+				C669C129B3242480274CD28C /* [CP] Embed Pods Frameworks */,
+				862E2C4BECE2162D4564E051 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1765515B1FA7688400106FA9 /* ZJLWebViewController.xib in Resources */,
 				17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */,
 				17C274071F9C8793003A226F /* Assets.xcassets in Resources */,
 				17E37A211FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib in Resources */,
@@ -339,6 +403,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7FD8E8D5726483E672148177 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSProject0001-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		862E2C4BECE2162D4564E051 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSProject0001/Pods-iOSProject0001-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C669C129B3242480274CD28C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSProject0001/Pods-iOSProject0001-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17C273F31F9C8793003A226F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -346,23 +461,28 @@
 			files = (
 				17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */,
 				174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */,
+				1765515E1FA770ED00106FA9 /* ZJLSettingViewController.m in Sources */,
 				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
 				174478CF1FA5E3D9008965E1 /* ZJLTextField.m in Sources */,
 				174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */,
 				174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */,
+				1765515A1FA7688400106FA9 /* ZJLWebViewController.m in Sources */,
 				171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */,
 				171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */,
 				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
 				171F752E1F9E3B550002FCDB /* ViewController.m in Sources */,
 				171F75341F9E3D630002FCDB /* ZJLNewViewController.m in Sources */,
+				174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */,
 				171F753D1F9E3F720002FCDB /* ZJLFollowViewController.m in Sources */,
 				171F752B1F9E3B550002FCDB /* AppDelegate.m in Sources */,
 				17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */,
 				17E6EC211F9F92EB00051F0A /* ZJLRecommendViewController.m in Sources */,
+				174478E11FA60EAE008965E1 /* ZJLMeSquare.m in Sources */,
 				17C2741E1F9CB590003A226F /* ZJLTabBarController.m in Sources */,
 				171F752D1F9E3B550002FCDB /* main.m in Sources */,
 				17E37A201FA2E69C00531AD8 /* ZJLLoginRegisterViewController.m in Sources */,
 				171F75211F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m in Sources */,
+				176551561FA75F2200106FA9 /* ZJLMeSquareButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +592,7 @@
 		};
 		17C2740F1F9C8793003A226F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE50DB4F785F55E0DA4A7B43 /* Pods-iOSProject0001.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -486,6 +607,7 @@
 		};
 		17C274101F9C8793003A226F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FA4E8EFEE42E9315A20070 /* Pods-iOSProject0001.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

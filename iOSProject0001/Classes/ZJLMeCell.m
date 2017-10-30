@@ -13,6 +13,9 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if ([super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        self.textLabel.textColor = [UIColor darkGrayColor];
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
     }
     return self;
 }
@@ -22,6 +25,11 @@
     
     self.imageView.y = ZJLSmallMargin;
     self.imageView.height = self.height- 2 * ZJLSmallMargin;
+    self.imageView.width = self.imageView.height;
+    if (self.imageView.image != nil) {
+        self.textLabel.x = self.imageView.x + self.imageView.width + ZJLMargin;
+    }
+    
 }
 
 @end

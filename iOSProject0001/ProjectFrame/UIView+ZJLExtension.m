@@ -80,4 +80,20 @@
     return self.center.y;
 }
 
+- (void)setBottom:(CGFloat)bottom{
+    
+}
+
+- (CGFloat)bottom{
+    return self.y + self.height;
+}
+
+- (void)setRight:(CGFloat)right{
+    
+}
+
+- (CGFloat)right{
+    return self.x + self.width;
+}
+
 @end

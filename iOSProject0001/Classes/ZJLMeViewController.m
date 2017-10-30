@@ -7,7 +7,10 @@
 //
 
 #import "ZJLMeViewController.h"
+#import "ZJLSettingViewController.h"
 #import "ZJLMeCell.h"
+#import "ZJLMeFootview.h"
+
 
 @interface ZJLMeViewController ()
 
@@ -25,11 +28,8 @@
     self.tableView.sectionHeaderHeight = 0;
     self.tableView.sectionFooterHeight = ZJLMargin;
     self.tableView.contentInset = UIEdgeInsetsMake(ZJLMargin-35, 0, 0, 0);
-    
-    UIView *footView = [[UIView alloc] init];
-    footView.backgroundColor = [UIColor redColor];
-    footView.height = 200;
-    self.tableView.tableFooterView = footView;
+
+    self.tableView.tableFooterView = [[ZJLMeFootview alloc] init];
     
     // Do any additional setup after loading the view.
     self.view.backgroundColor = ZJLCommonBg;
@@ -45,7 +45,8 @@
 }
 
 - (void)settingBtn_click{
-    
+    ZJLSettingViewController *vc = [[ZJLSettingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark -- datasource
@@ -69,6 +70,7 @@
         cell.imageView.image = [UIImage imageNamed:@"setup-head-default"];
     }else{
         cell.textLabel.text = @"离线加载";
+        cell.imageView.image = nil;
     }
     
     return cell;
