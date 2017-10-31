@@ -22,6 +22,8 @@
 		174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D91FA5F537008965E1 /* ZJLConst.m */; };
 		174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478DC1FA5FF65008965E1 /* ZJLMeFootview.m */; };
 		174478E11FA60EAE008965E1 /* ZJLMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478E01FA60EAE008965E1 /* ZJLMeSquare.m */; };
+		1755DA141FA8A90900F522CC /* NSString+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1755DA131FA8A90900F522CC /* NSString+ZJLExtension.m */; };
+		1755DA171FA8BBB500F522CC /* ZJLClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1755DA161FA8BBB500F522CC /* ZJLClearCacheCell.m */; };
 		176551561FA75F2200106FA9 /* ZJLMeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 176551551FA75F2200106FA9 /* ZJLMeSquareButton.m */; };
 		1765515A1FA7688400106FA9 /* ZJLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176551581FA7688400106FA9 /* ZJLWebViewController.m */; };
 		1765515B1FA7688400106FA9 /* ZJLWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176551591FA7688400106FA9 /* ZJLWebViewController.xib */; };
@@ -71,6 +73,10 @@
 		174478DC1FA5FF65008965E1 /* ZJLMeFootview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeFootview.m; sourceTree = "<group>"; };
 		174478DF1FA60EAE008965E1 /* ZJLMeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLMeSquare.h; sourceTree = "<group>"; };
 		174478E01FA60EAE008965E1 /* ZJLMeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeSquare.m; sourceTree = "<group>"; };
+		1755DA121FA8A90900F522CC /* NSString+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZJLExtension.h"; sourceTree = "<group>"; };
+		1755DA131FA8A90900F522CC /* NSString+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZJLExtension.m"; sourceTree = "<group>"; };
+		1755DA151FA8BBB500F522CC /* ZJLClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLClearCacheCell.h; sourceTree = "<group>"; };
+		1755DA161FA8BBB500F522CC /* ZJLClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLClearCacheCell.m; sourceTree = "<group>"; };
 		176551541FA75F2200106FA9 /* ZJLMeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLMeSquareButton.h; sourceTree = "<group>"; };
 		176551551FA75F2200106FA9 /* ZJLMeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeSquareButton.m; sourceTree = "<group>"; };
 		176551571FA7688400106FA9 /* ZJLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLWebViewController.h; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 				174478DC1FA5FF65008965E1 /* ZJLMeFootview.m */,
 				176551541FA75F2200106FA9 /* ZJLMeSquareButton.h */,
 				176551551FA75F2200106FA9 /* ZJLMeSquareButton.m */,
+				1755DA151FA8BBB500F522CC /* ZJLClearCacheCell.h */,
+				1755DA161FA8BBB500F522CC /* ZJLClearCacheCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -281,6 +289,8 @@
 				17C274231F9CB6EA003A226F /* UIView+ZJLExtension.m */,
 				174478D01FA5E5DC008965E1 /* UITextField+ZJLExtension.h */,
 				174478D11FA5E5DC008965E1 /* UITextField+ZJLExtension.m */,
+				1755DA121FA8A90900F522CC /* NSString+ZJLExtension.h */,
+				1755DA131FA8A90900F522CC /* NSString+ZJLExtension.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -428,9 +438,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSProject0001/Pods-iOSProject0001-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -460,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */,
+				1755DA171FA8BBB500F522CC /* ZJLClearCacheCell.m in Sources */,
 				174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */,
 				1765515E1FA770ED00106FA9 /* ZJLSettingViewController.m in Sources */,
 				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
@@ -472,6 +486,7 @@
 				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
 				171F752E1F9E3B550002FCDB /* ViewController.m in Sources */,
 				171F75341F9E3D630002FCDB /* ZJLNewViewController.m in Sources */,
+				1755DA141FA8A90900F522CC /* NSString+ZJLExtension.m in Sources */,
 				174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */,
 				171F753D1F9E3F720002FCDB /* ZJLFollowViewController.m in Sources */,
 				171F752B1F9E3B550002FCDB /* AppDelegate.m in Sources */,

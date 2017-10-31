@@ -18,6 +18,7 @@
 #import "UIView+ZJLExtension.h"
 #import "UITextField+ZJLExtension.h"
 #import "ZJLConst.h"
+#import "NSString+ZJLExtension.h"
 /* 日志 */
 #ifdef DEBUG
 #define ZJLLog(...) NSLog(__VA_ARGS__)

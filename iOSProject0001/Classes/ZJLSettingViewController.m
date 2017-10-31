@@ -7,6 +7,7 @@
 //
 
 #import "ZJLSettingViewController.h"
+#import "ZJLClearCacheCell.h"
 
 @interface ZJLSettingViewController ()
 
@@ -23,26 +24,10 @@
     // Do any additional setup after loading the view.
     self.title = @"设置";
     self.view.backgroundColor = ZJLCommonBg;
-    
-    [self getCacheSize];
+
 }
 
-- (void)getCacheSize{
-    NSUInteger size = 0;
-    NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-    //NSString *dirpath = [cachePath stringByAppendingPathComponent:@"MP3"];
-    //ZJLLog(@"%@",dirpath);
-    
-    NSFileManager *fmr = [NSFileManager defaultManager];
-    NSArray *subpaths = [fmr subpathsAtPath:cachePath];
-    for (NSString *subpath in subpaths) {
-        NSString *fullPath = [cachePath stringByAppendingPathComponent:subpath];
-        NSDictionary *attr = [fmr attributesOfItemAtPath:fullPath error:nil];
-        size += [attr[NSFileSize] unsignedIntegerValue];
-    }
-    
-    ZJLLog(@"%zd",size);
-}
+
 
 #pragma mark -- datasource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -55,13 +40,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString* ID = @"setting";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    ZJLClearCacheCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[ZJLClearCacheCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
-    
-    cell.textLabel.text = @"清除缓存";
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
     return cell;
 }
 @end
