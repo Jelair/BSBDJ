@@ -28,6 +28,11 @@
 		1765515A1FA7688400106FA9 /* ZJLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176551581FA7688400106FA9 /* ZJLWebViewController.m */; };
 		1765515B1FA7688400106FA9 /* ZJLWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176551591FA7688400106FA9 /* ZJLWebViewController.xib */; };
 		1765515E1FA770ED00106FA9 /* ZJLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1765515D1FA770ED00106FA9 /* ZJLSettingViewController.m */; };
+		17858A4D1FB471EA001DB562 /* ZJLAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A4C1FB471EA001DB562 /* ZJLAllTableViewController.m */; };
+		17858A501FB47209001DB562 /* ZJLVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A4F1FB47209001DB562 /* ZJLVideoTableViewController.m */; };
+		17858A531FB47218001DB562 /* ZJLMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A521FB47218001DB562 /* ZJLMusicTableViewController.m */; };
+		17858A561FB47228001DB562 /* ZJLPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A551FB47228001DB562 /* ZJLPictureTableViewController.m */; };
+		17858A591FB47234001DB562 /* ZJLWordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A581FB47234001DB562 /* ZJLWordTableViewController.m */; };
 		17C274071F9C8793003A226F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C274061F9C8793003A226F /* Assets.xcassets */; };
 		17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C274081F9C8793003A226F /* LaunchScreen.storyboard */; };
 		17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2741A1F9CB590003A226F /* ZJLNavigationController.m */; };
@@ -84,6 +89,16 @@
 		176551591FA7688400106FA9 /* ZJLWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLWebViewController.xib; sourceTree = "<group>"; };
 		1765515C1FA770ED00106FA9 /* ZJLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLSettingViewController.h; sourceTree = "<group>"; };
 		1765515D1FA770ED00106FA9 /* ZJLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLSettingViewController.m; sourceTree = "<group>"; };
+		17858A4B1FB471EA001DB562 /* ZJLAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLAllTableViewController.h; sourceTree = "<group>"; };
+		17858A4C1FB471EA001DB562 /* ZJLAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLAllTableViewController.m; sourceTree = "<group>"; };
+		17858A4E1FB47209001DB562 /* ZJLVideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLVideoTableViewController.h; sourceTree = "<group>"; };
+		17858A4F1FB47209001DB562 /* ZJLVideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLVideoTableViewController.m; sourceTree = "<group>"; };
+		17858A511FB47218001DB562 /* ZJLMusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLMusicTableViewController.h; sourceTree = "<group>"; };
+		17858A521FB47218001DB562 /* ZJLMusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMusicTableViewController.m; sourceTree = "<group>"; };
+		17858A541FB47228001DB562 /* ZJLPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLPictureTableViewController.h; sourceTree = "<group>"; };
+		17858A551FB47228001DB562 /* ZJLPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLPictureTableViewController.m; sourceTree = "<group>"; };
+		17858A571FB47234001DB562 /* ZJLWordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLWordTableViewController.h; sourceTree = "<group>"; };
+		17858A581FB47234001DB562 /* ZJLWordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLWordTableViewController.m; sourceTree = "<group>"; };
 		17C273F71F9C8793003A226F /* iOSProject0001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject0001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C274061F9C8793003A226F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C274091F9C8793003A226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -178,6 +193,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		17858A4A1FB471BB001DB562 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17858A4B1FB471EA001DB562 /* ZJLAllTableViewController.h */,
+				17858A4C1FB471EA001DB562 /* ZJLAllTableViewController.m */,
+				17858A4E1FB47209001DB562 /* ZJLVideoTableViewController.h */,
+				17858A4F1FB47209001DB562 /* ZJLVideoTableViewController.m */,
+				17858A511FB47218001DB562 /* ZJLMusicTableViewController.h */,
+				17858A521FB47218001DB562 /* ZJLMusicTableViewController.m */,
+				17858A541FB47228001DB562 /* ZJLPictureTableViewController.h */,
+				17858A551FB47228001DB562 /* ZJLPictureTableViewController.m */,
+				17858A571FB47234001DB562 /* ZJLWordTableViewController.h */,
+				17858A581FB47234001DB562 /* ZJLWordTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		17C273EE1F9C8793003A226F = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +281,7 @@
 		17E37A171FA2E56300531AD8 /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				17858A4A1FB471BB001DB562 /* ViewControllers */,
 				171F75351F9E3D810002FCDB /* ZJLEssenceViewController.h */,
 				171F75361F9E3D810002FCDB /* ZJLEssenceViewController.m */,
 			);
@@ -474,13 +507,17 @@
 			files = (
 				17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */,
 				1755DA171FA8BBB500F522CC /* ZJLClearCacheCell.m in Sources */,
+				17858A531FB47218001DB562 /* ZJLMusicTableViewController.m in Sources */,
 				174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */,
 				1765515E1FA770ED00106FA9 /* ZJLSettingViewController.m in Sources */,
 				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
+				17858A591FB47234001DB562 /* ZJLWordTableViewController.m in Sources */,
 				174478CF1FA5E3D9008965E1 /* ZJLTextField.m in Sources */,
 				174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */,
 				174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */,
+				17858A4D1FB471EA001DB562 /* ZJLAllTableViewController.m in Sources */,
 				1765515A1FA7688400106FA9 /* ZJLWebViewController.m in Sources */,
+				17858A561FB47228001DB562 /* ZJLPictureTableViewController.m in Sources */,
 				171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */,
 				171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */,
 				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
@@ -493,6 +530,7 @@
 				17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */,
 				17E6EC211F9F92EB00051F0A /* ZJLRecommendViewController.m in Sources */,
 				174478E11FA60EAE008965E1 /* ZJLMeSquare.m in Sources */,
+				17858A501FB47209001DB562 /* ZJLVideoTableViewController.m in Sources */,
 				17C2741E1F9CB590003A226F /* ZJLTabBarController.m in Sources */,
 				171F752D1F9E3B550002FCDB /* main.m in Sources */,
 				17E37A201FA2E69C00531AD8 /* ZJLLoginRegisterViewController.m in Sources */,

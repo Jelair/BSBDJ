@@ -20,7 +20,6 @@
     
     //设置pop滑动手势代理
     self.interactivePopGestureRecognizer.delegate = self;
-    
     //设置背景图片
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
