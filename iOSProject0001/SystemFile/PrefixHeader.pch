@@ -19,6 +19,10 @@
 #import "UITextField+ZJLExtension.h"
 #import "ZJLConst.h"
 #import "NSString+ZJLExtension.h"
+
+/* 将服务器返回的数据写入plist */
+#define ZJLWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"%@",filename] atomically:YES];
+
 /* 日志 */
 #ifdef DEBUG
 #define ZJLLog(...) NSLog(__VA_ARGS__)
@@ -26,10 +30,12 @@
 #define ZJLLog(...)
 #endif
 
+#define ZJLLogFunc ZJLLog(@"%s", __func__);
+
 /* 颜色 */
 #define ZJLColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
-#define ZJLRGBColor(r, g, b) ZJLColor(r, g, b, 255)
-#define ZJLRandomColor ZJLColor(arc4random_uniform(255), arc4random_uniform(255), arc4random(255), 255)
+#define ZJLRGBColor(r, g, b) ZJLColor((r), (g), (b), 255)
+#define ZJLRandomColor ZJLRGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
 #define ZJLCommonBg ZJLColor(206, 206, 206, 255)
 

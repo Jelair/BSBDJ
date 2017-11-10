@@ -24,7 +24,7 @@
         [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            ZJLLog(@"%@",responseObject);
+            //ZJLLog(@"%@",responseObject);
             //[responseObject writeToFile:@"/Users/nowornever/Desktop/me.plist" atomically:YES];
             NSArray *squares = [ZJLMeSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
             [self createSquares:squares];
