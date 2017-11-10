@@ -8,7 +8,7 @@
 
 #import "ZJLMeFootview.h"
 #import "ZJLMeSquare.h"
-#import <AFNetworking.h>
+#import "ZJLHTTPSessionManager.h"
 #import <MJExtension.h>
 
 #import "ZJLMeSquareButton.h"
@@ -21,7 +21,7 @@
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         params[@"a"] = @"square";
         params[@"c"] = @"topic";
-        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        [[ZJLHTTPSessionManager manager] GET:ZJLCommonURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             //ZJLLog(@"%@",responseObject);
@@ -42,7 +42,6 @@
     CGFloat squareW = self.width / maxColsCount;
     CGFloat squareH = squareW;
     for (int i = 0; i < count; i++) {
-        ZJLMeSquare *square = squares[i];
         
         ZJLMeSquareButton *button = [ZJLMeSquareButton buttonWithType:UIButtonTypeCustom];
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -52,8 +51,6 @@
         button.y = (i / maxColsCount) * squareH;
         button.width = squareW;
         button.height = squareH;
-        
-
         
         button.square = squares[i];
     }

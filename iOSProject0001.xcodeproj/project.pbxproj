@@ -36,6 +36,9 @@
 		17AE93321FB583DB00D80057 /* ZJLRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93311FB583DB00D80057 /* ZJLRefreshHeader.m */; };
 		17AE93361FB5931D00D80057 /* ZJLAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93351FB5931D00D80057 /* ZJLAllTableViewController.m */; };
 		17AE93391FB5A00500D80057 /* ZJLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93381FB5A00500D80057 /* ZJLRefreshFooter.m */; };
+		17AE933C1FB5B36500D80057 /* ZJLHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE933B1FB5B36500D80057 /* ZJLHTTPSessionManager.m */; };
+		17AE93411FB5D54100D80057 /* ZJLTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE933F1FB5D54100D80057 /* ZJLTopicCell.m */; };
+		17AE93421FB5D54100D80057 /* ZJLTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AE93401FB5D54100D80057 /* ZJLTopicCell.xib */; };
 		17C274071F9C8793003A226F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C274061F9C8793003A226F /* Assets.xcassets */; };
 		17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C274081F9C8793003A226F /* LaunchScreen.storyboard */; };
 		17C2741D1F9CB590003A226F /* ZJLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2741A1F9CB590003A226F /* ZJLNavigationController.m */; };
@@ -108,6 +111,11 @@
 		17AE93351FB5931D00D80057 /* ZJLAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLAllTableViewController.m; sourceTree = "<group>"; };
 		17AE93371FB5A00500D80057 /* ZJLRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRefreshFooter.h; sourceTree = "<group>"; };
 		17AE93381FB5A00500D80057 /* ZJLRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLRefreshFooter.m; sourceTree = "<group>"; };
+		17AE933A1FB5B36500D80057 /* ZJLHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLHTTPSessionManager.h; sourceTree = "<group>"; };
+		17AE933B1FB5B36500D80057 /* ZJLHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLHTTPSessionManager.m; sourceTree = "<group>"; };
+		17AE933E1FB5D54100D80057 /* ZJLTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLTopicCell.h; sourceTree = "<group>"; };
+		17AE933F1FB5D54100D80057 /* ZJLTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTopicCell.m; sourceTree = "<group>"; };
+		17AE93401FB5D54100D80057 /* ZJLTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLTopicCell.xib; sourceTree = "<group>"; };
 		17C273F71F9C8793003A226F /* iOSProject0001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject0001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C274061F9C8793003A226F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C274091F9C8793003A226F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -201,6 +209,8 @@
 				17AE93311FB583DB00D80057 /* ZJLRefreshHeader.m */,
 				17AE93371FB5A00500D80057 /* ZJLRefreshFooter.h */,
 				17AE93381FB5A00500D80057 /* ZJLRefreshFooter.m */,
+				17AE933A1FB5B36500D80057 /* ZJLHTTPSessionManager.h */,
+				17AE933B1FB5B36500D80057 /* ZJLHTTPSessionManager.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -229,6 +239,16 @@
 				17858A581FB47234001DB562 /* ZJLWordTableViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17AE933D1FB5B85400D80057 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17AE933E1FB5D54100D80057 /* ZJLTopicCell.h */,
+				17AE933F1FB5D54100D80057 /* ZJLTopicCell.m */,
+				17AE93401FB5D54100D80057 /* ZJLTopicCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		17C273EE1F9C8793003A226F = {
@@ -303,6 +323,7 @@
 		17E37A171FA2E56300531AD8 /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				17AE933D1FB5B85400D80057 /* Views */,
 				171967961FB53ABF00A5CD67 /* Model */,
 				17858A4A1FB471BB001DB562 /* ViewControllers */,
 				171F75351F9E3D810002FCDB /* ZJLEssenceViewController.h */,
@@ -459,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1765515B1FA7688400106FA9 /* ZJLWebViewController.xib in Resources */,
+				17AE93421FB5D54100D80057 /* ZJLTopicCell.xib in Resources */,
 				17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */,
 				17C274071F9C8793003A226F /* Assets.xcassets in Resources */,
 				17E37A211FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib in Resources */,
@@ -547,7 +569,9 @@
 				171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */,
 				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
 				171F752E1F9E3B550002FCDB /* ViewController.m in Sources */,
+				17AE933C1FB5B36500D80057 /* ZJLHTTPSessionManager.m in Sources */,
 				171F75341F9E3D630002FCDB /* ZJLNewViewController.m in Sources */,
+				17AE93411FB5D54100D80057 /* ZJLTopicCell.m in Sources */,
 				1755DA141FA8A90900F522CC /* NSString+ZJLExtension.m in Sources */,
 				174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */,
 				171967991FB53AE200A5CD67 /* ZJLTopic.m in Sources */,
