@@ -49,18 +49,27 @@
                                     <color key="titleColor" red="0.4664831606" green="0.4664831606" blue="0.4664831606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="CAh-Iv-7PE">
+                                <rect key="frame" x="0.0" y="0.0" width="416" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="I9t-p8-evy"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SZP-LF-52L" firstAttribute="width" secondItem="Qxs-fy-KEx" secondAttribute="width" id="0Lw-My-pfa"/>
                             <constraint firstItem="Qxs-fy-KEx" firstAttribute="centerY" secondItem="tTj-MK-BmN" secondAttribute="centerY" id="FKn-iG-sqg"/>
                             <constraint firstItem="tTj-MK-BmN" firstAttribute="leading" secondItem="w2h-Y4-WCd" secondAttribute="leading" id="MGK-L7-NmY"/>
+                            <constraint firstItem="CAh-Iv-7PE" firstAttribute="top" secondItem="w2h-Y4-WCd" secondAttribute="top" id="Me7-GW-vfP"/>
                             <constraint firstAttribute="bottom" secondItem="tTj-MK-BmN" secondAttribute="bottom" id="NeO-Bp-S7F"/>
                             <constraint firstItem="tTj-MK-BmN" firstAttribute="top" secondItem="w2h-Y4-WCd" secondAttribute="top" id="P6c-Ny-Vqr"/>
                             <constraint firstItem="SZP-LF-52L" firstAttribute="leading" secondItem="Qxs-fy-KEx" secondAttribute="trailing" id="PPX-RI-Y2S"/>
                             <constraint firstItem="EDy-ZT-A4j" firstAttribute="leading" secondItem="SZP-LF-52L" secondAttribute="trailing" id="Pua-sK-02P"/>
+                            <constraint firstAttribute="trailing" secondItem="CAh-Iv-7PE" secondAttribute="trailing" id="Wdk-3M-qmi"/>
                             <constraint firstAttribute="height" constant="35" id="Y2U-bx-Ruz"/>
                             <constraint firstAttribute="trailing" secondItem="EDy-ZT-A4j" secondAttribute="trailing" id="aIg-46-1ja"/>
+                            <constraint firstItem="CAh-Iv-7PE" firstAttribute="leading" secondItem="w2h-Y4-WCd" secondAttribute="leading" id="hcR-ng-XK9"/>
                             <constraint firstItem="SZP-LF-52L" firstAttribute="height" secondItem="Qxs-fy-KEx" secondAttribute="height" id="mcQ-L1-sPg"/>
                             <constraint firstItem="EDy-ZT-A4j" firstAttribute="width" secondItem="SZP-LF-52L" secondAttribute="width" id="n3C-eh-qKl"/>
                             <constraint firstItem="EDy-ZT-A4j" firstAttribute="centerY" secondItem="SZP-LF-52L" secondAttribute="centerY" id="p6M-0B-aSL"/>
@@ -174,6 +183,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="cell-content-line" width="299" height="1"/>
         <image name="cellmorebtnnormal" width="24" height="20"/>
         <image name="mainCellCai" width="20" height="20"/>
         <image name="mainCellComment" width="20" height="20"/>
