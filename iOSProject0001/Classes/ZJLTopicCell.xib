@@ -178,6 +178,8 @@
                 <outlet property="profile_image" destination="vfw-rU-82y" id="Wob-2G-JSC"/>
                 <outlet property="shareBtn" destination="SZP-LF-52L" id="P7S-hf-Ulb"/>
                 <outlet property="text_Label" destination="DEE-UH-ADB" id="9R4-Ll-ikd"/>
+                <outlet property="topCmtContentLabel" destination="CUH-ka-ecb" id="x6j-2u-Xxj"/>
+                <outlet property="topCmtView" destination="wzF-xl-Pj4" id="Tp6-W1-knN"/>
             </connections>
             <point key="canvasLocation" x="33" y="-14"/>
         </tableViewCell>

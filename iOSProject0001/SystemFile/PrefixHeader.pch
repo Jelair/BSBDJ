@@ -19,9 +19,14 @@
 #import "UITextField+ZJLExtension.h"
 #import "ZJLConst.h"
 #import "NSString+ZJLExtension.h"
+#import "NSDate+ZJLExtension.h"
+#import "NSCalendar+ZJLExtension.h"
 
 /* 将服务器返回的数据写入plist */
 #define ZJLWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"%@",filename] atomically:YES];
+
+/* 系统版本判断 */
+#define iOS(version) [[UIDevice currentDevice].systemVersion.doubleValue >= (version)]
 
 /* 日志 */
 #ifdef DEBUG

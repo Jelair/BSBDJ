@@ -33,6 +33,10 @@
 		17858A531FB47218001DB562 /* ZJLMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A521FB47218001DB562 /* ZJLMusicTableViewController.m */; };
 		17858A561FB47228001DB562 /* ZJLPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A551FB47228001DB562 /* ZJLPictureTableViewController.m */; };
 		17858A591FB47234001DB562 /* ZJLWordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17858A581FB47234001DB562 /* ZJLWordTableViewController.m */; };
+		1797F5F91FBAFD3E00D6A04F /* NSDate+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F5F81FBAFD3E00D6A04F /* NSDate+ZJLExtension.m */; };
+		1797F5FC1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F5FB1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m */; };
+		1797F5FF1FBB142E00D6A04F /* ZJLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F5FE1FBB142E00D6A04F /* ZJLUser.m */; };
+		1797F6021FBB146D00D6A04F /* ZJLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F6011FBB146D00D6A04F /* ZJLComment.m */; };
 		17AE93321FB583DB00D80057 /* ZJLRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93311FB583DB00D80057 /* ZJLRefreshHeader.m */; };
 		17AE93361FB5931D00D80057 /* ZJLAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93351FB5931D00D80057 /* ZJLAllTableViewController.m */; };
 		17AE93391FB5A00500D80057 /* ZJLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93381FB5A00500D80057 /* ZJLRefreshFooter.m */; };
@@ -106,6 +110,14 @@
 		17858A551FB47228001DB562 /* ZJLPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLPictureTableViewController.m; sourceTree = "<group>"; };
 		17858A571FB47234001DB562 /* ZJLWordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLWordTableViewController.h; sourceTree = "<group>"; };
 		17858A581FB47234001DB562 /* ZJLWordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLWordTableViewController.m; sourceTree = "<group>"; };
+		1797F5F71FBAFD3E00D6A04F /* NSDate+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZJLExtension.h"; sourceTree = "<group>"; };
+		1797F5F81FBAFD3E00D6A04F /* NSDate+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZJLExtension.m"; sourceTree = "<group>"; };
+		1797F5FA1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ZJLExtension.h"; sourceTree = "<group>"; };
+		1797F5FB1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ZJLExtension.m"; sourceTree = "<group>"; };
+		1797F5FD1FBB142E00D6A04F /* ZJLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLUser.h; sourceTree = "<group>"; };
+		1797F5FE1FBB142E00D6A04F /* ZJLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLUser.m; sourceTree = "<group>"; };
+		1797F6001FBB146D00D6A04F /* ZJLComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLComment.h; sourceTree = "<group>"; };
+		1797F6011FBB146D00D6A04F /* ZJLComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLComment.m; sourceTree = "<group>"; };
 		17AE93301FB583DB00D80057 /* ZJLRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRefreshHeader.h; sourceTree = "<group>"; };
 		17AE93311FB583DB00D80057 /* ZJLRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLRefreshHeader.m; sourceTree = "<group>"; };
 		17AE93351FB5931D00D80057 /* ZJLAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLAllTableViewController.m; sourceTree = "<group>"; };
@@ -156,6 +168,10 @@
 			children = (
 				171967971FB53AE200A5CD67 /* ZJLTopic.h */,
 				171967981FB53AE200A5CD67 /* ZJLTopic.m */,
+				1797F5FD1FBB142E00D6A04F /* ZJLUser.h */,
+				1797F5FE1FBB142E00D6A04F /* ZJLUser.m */,
+				1797F6001FBB146D00D6A04F /* ZJLComment.h */,
+				1797F6011FBB146D00D6A04F /* ZJLComment.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -368,6 +384,10 @@
 				174478D11FA5E5DC008965E1 /* UITextField+ZJLExtension.m */,
 				1755DA121FA8A90900F522CC /* NSString+ZJLExtension.h */,
 				1755DA131FA8A90900F522CC /* NSString+ZJLExtension.m */,
+				1797F5F71FBAFD3E00D6A04F /* NSDate+ZJLExtension.h */,
+				1797F5F81FBAFD3E00D6A04F /* NSDate+ZJLExtension.m */,
+				1797F5FA1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.h */,
+				1797F5FB1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -553,13 +573,16 @@
 			files = (
 				17C274211F9CB678003A226F /* ZJLTabBar.m in Sources */,
 				1755DA171FA8BBB500F522CC /* ZJLClearCacheCell.m in Sources */,
+				1797F6021FBB146D00D6A04F /* ZJLComment.m in Sources */,
 				17858A531FB47218001DB562 /* ZJLMusicTableViewController.m in Sources */,
+				1797F5FF1FBB142E00D6A04F /* ZJLUser.m in Sources */,
 				174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */,
 				1765515E1FA770ED00106FA9 /* ZJLSettingViewController.m in Sources */,
 				17AE93391FB5A00500D80057 /* ZJLRefreshFooter.m in Sources */,
 				17AE93361FB5931D00D80057 /* ZJLAllTableViewController.m in Sources */,
 				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
 				17858A591FB47234001DB562 /* ZJLWordTableViewController.m in Sources */,
+				1797F5F91FBAFD3E00D6A04F /* NSDate+ZJLExtension.m in Sources */,
 				174478CF1FA5E3D9008965E1 /* ZJLTextField.m in Sources */,
 				174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */,
 				174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */,
@@ -571,6 +594,7 @@
 				171F752E1F9E3B550002FCDB /* ViewController.m in Sources */,
 				17AE933C1FB5B36500D80057 /* ZJLHTTPSessionManager.m in Sources */,
 				171F75341F9E3D630002FCDB /* ZJLNewViewController.m in Sources */,
+				1797F5FC1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m in Sources */,
 				17AE93411FB5D54100D80057 /* ZJLTopicCell.m in Sources */,
 				1755DA141FA8A90900F522CC /* NSString+ZJLExtension.m in Sources */,
 				174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */,

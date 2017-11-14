@@ -21,5 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *commentBtn;
 
 @property (nonatomic, strong) ZJLTopic *mTopic;
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
 
 @end

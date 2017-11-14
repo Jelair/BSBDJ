@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class ZJLComment;
 
 @interface ZJLTopic : NSObject
 //用户的名字
@@ -25,5 +26,7 @@
 @property (nonatomic, assign) NSInteger repost;
 //评论数量
 @property (nonatomic, assign) NSInteger comment;
+//最热评论
+@property (nonatomic, strong) NSArray<ZJLComment *> *top_cmt;
 
 @end
