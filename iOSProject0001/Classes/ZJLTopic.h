@@ -7,6 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+
+//typedef enum {
+//    ZJLTopicTypePicture = 10,
+//    ZJLTopicTypeWord = 29,
+//    ZJLTopicTypeVoice = 31,
+//    ZJLTopicTypeVideo = 41
+//}ZJLTopicType;
+
+typedef NS_ENUM(NSUInteger, ZJLTopicType){
+    ZJLTopicTypePicture = 10,
+    ZJLTopicTypeWord = 29,
+    ZJLTopicTypeVoice = 31,
+    ZJLTopicTypeVideo = 41
+};
+
 @class ZJLComment;
 
 @interface ZJLTopic : NSObject
@@ -28,5 +43,7 @@
 @property (nonatomic, assign) NSInteger comment;
 //最热评论
 @property (nonatomic, strong) NSArray<ZJLComment *> *top_cmt;
+//帖子类型
+@property (nonatomic, assign) NSInteger type;
 
 @end

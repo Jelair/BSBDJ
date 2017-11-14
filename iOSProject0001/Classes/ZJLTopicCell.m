@@ -13,6 +13,7 @@
 
 @implementation ZJLTopicCell
 
+
 - (void)setMTopic:(ZJLTopic *)mTopic{
     _mTopic = mTopic;
     [self.profile_image sd_setImageWithURL:[NSURL URLWithString:mTopic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
@@ -37,6 +38,17 @@
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",username, content];
     }else{
         self.topCmtView.hidden = YES;
+    }
+    
+    //中间内容
+    if(mTopic.type == ZJLTopicTypeVideo){
+        
+    } else if(mTopic.type == ZJLTopicTypeVoice){
+        
+    } else if(mTopic.type == ZJLTopicTypePicture){
+        
+    } else if(mTopic.type == ZJLTopicTypeWord){
+        
     }
 }
 
