@@ -42,8 +42,24 @@ typedef NS_ENUM(NSUInteger, ZJLTopicType){
 //评论数量
 @property (nonatomic, assign) NSInteger comment;
 //最热评论
-@property (nonatomic, strong) NSArray<ZJLComment *> *top_cmt;
+@property (nonatomic, strong) ZJLComment *top_cmt;
 //帖子类型
 @property (nonatomic, assign) NSInteger type;
+//图片真实宽度
+@property (nonatomic, assign) CGFloat width;
+//图片真实高度
+@property (nonatomic, assign) CGFloat height;
+//小图
+@property (nonatomic, copy) NSString *small_image;
+//大图
+@property (nonatomic, copy) NSString *large_image;
+//中图
+@property (nonatomic, copy) NSString *middle_image;
 
+@property (nonatomic, assign) BOOL is_gif;
+//额外的属性
+@property (nonatomic, assign) CGFloat cellHeight;
+@property (nonatomic, assign) CGRect contentF;
+//是否
+@property (nonatomic, assign, getter=isBigPicture) BOOL bigPicture;
 @end

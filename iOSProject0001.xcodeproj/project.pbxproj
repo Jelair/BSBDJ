@@ -17,6 +17,13 @@
 		171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F75361F9E3D810002FCDB /* ZJLEssenceViewController.m */; };
 		171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */; };
 		171F753D1F9E3F720002FCDB /* ZJLFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F753C1F9E3F720002FCDB /* ZJLFollowViewController.m */; };
+		1724BC6D1FBC93C100616789 /* ZJLPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724BC6C1FBC93C100616789 /* ZJLPictureView.m */; };
+		1724BC701FBC93DE00616789 /* ZJLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724BC6F1FBC93DE00616789 /* ZJLVideoView.m */; };
+		1724BC731FBC93EF00616789 /* ZJLVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724BC721FBC93EF00616789 /* ZJLVoiceView.m */; };
+		1724BC751FBC940A00616789 /* ZJLPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1724BC741FBC940A00616789 /* ZJLPictureView.xib */; };
+		1724BC771FBC945A00616789 /* ZJLVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1724BC761FBC945A00616789 /* ZJLVideoView.xib */; };
+		1724BC791FBC948D00616789 /* ZJLVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1724BC781FBC948D00616789 /* ZJLVoiceView.xib */; };
+		1724BC7C1FBCB25F00616789 /* ZJLExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724BC7B1FBCB25F00616789 /* ZJLExtensionConfig.m */; };
 		174478CF1FA5E3D9008965E1 /* ZJLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478CE1FA5E3D9008965E1 /* ZJLTextField.m */; };
 		174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D11FA5E5DC008965E1 /* UITextField+ZJLExtension.m */; };
 		174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 174478D51FA5F41D008965E1 /* ZJLMeCell.m */; };
@@ -78,6 +85,17 @@
 		171F75391F9E3DA50002FCDB /* ZJLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLMeViewController.m; sourceTree = "<group>"; };
 		171F753B1F9E3F720002FCDB /* ZJLFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLFollowViewController.h; sourceTree = "<group>"; };
 		171F753C1F9E3F720002FCDB /* ZJLFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLFollowViewController.m; sourceTree = "<group>"; };
+		1724BC6B1FBC93C100616789 /* ZJLPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLPictureView.h; sourceTree = "<group>"; };
+		1724BC6C1FBC93C100616789 /* ZJLPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLPictureView.m; sourceTree = "<group>"; };
+		1724BC6E1FBC93DE00616789 /* ZJLVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLVideoView.h; sourceTree = "<group>"; };
+		1724BC6F1FBC93DE00616789 /* ZJLVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLVideoView.m; sourceTree = "<group>"; };
+		1724BC711FBC93EF00616789 /* ZJLVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLVoiceView.h; sourceTree = "<group>"; };
+		1724BC721FBC93EF00616789 /* ZJLVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLVoiceView.m; sourceTree = "<group>"; };
+		1724BC741FBC940A00616789 /* ZJLPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLPictureView.xib; sourceTree = "<group>"; };
+		1724BC761FBC945A00616789 /* ZJLVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLVideoView.xib; sourceTree = "<group>"; };
+		1724BC781FBC948D00616789 /* ZJLVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLVoiceView.xib; sourceTree = "<group>"; };
+		1724BC7A1FBCB25F00616789 /* ZJLExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLExtensionConfig.h; sourceTree = "<group>"; };
+		1724BC7B1FBCB25F00616789 /* ZJLExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLExtensionConfig.m; sourceTree = "<group>"; };
 		174478CD1FA5E3D9008965E1 /* ZJLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLTextField.h; sourceTree = "<group>"; };
 		174478CE1FA5E3D9008965E1 /* ZJLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTextField.m; sourceTree = "<group>"; };
 		174478D01FA5E5DC008965E1 /* UITextField+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZJLExtension.h"; sourceTree = "<group>"; };
@@ -227,6 +245,8 @@
 				17AE93381FB5A00500D80057 /* ZJLRefreshFooter.m */,
 				17AE933A1FB5B36500D80057 /* ZJLHTTPSessionManager.h */,
 				17AE933B1FB5B36500D80057 /* ZJLHTTPSessionManager.m */,
+				1724BC7A1FBCB25F00616789 /* ZJLExtensionConfig.h */,
+				1724BC7B1FBCB25F00616789 /* ZJLExtensionConfig.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -263,6 +283,15 @@
 				17AE933E1FB5D54100D80057 /* ZJLTopicCell.h */,
 				17AE933F1FB5D54100D80057 /* ZJLTopicCell.m */,
 				17AE93401FB5D54100D80057 /* ZJLTopicCell.xib */,
+				1724BC6B1FBC93C100616789 /* ZJLPictureView.h */,
+				1724BC6C1FBC93C100616789 /* ZJLPictureView.m */,
+				1724BC741FBC940A00616789 /* ZJLPictureView.xib */,
+				1724BC6E1FBC93DE00616789 /* ZJLVideoView.h */,
+				1724BC6F1FBC93DE00616789 /* ZJLVideoView.m */,
+				1724BC761FBC945A00616789 /* ZJLVideoView.xib */,
+				1724BC711FBC93EF00616789 /* ZJLVoiceView.h */,
+				1724BC721FBC93EF00616789 /* ZJLVoiceView.m */,
+				1724BC781FBC948D00616789 /* ZJLVoiceView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -501,10 +530,13 @@
 			files = (
 				1765515B1FA7688400106FA9 /* ZJLWebViewController.xib in Resources */,
 				17AE93421FB5D54100D80057 /* ZJLTopicCell.xib in Resources */,
+				1724BC751FBC940A00616789 /* ZJLPictureView.xib in Resources */,
 				17C2740A1F9C8793003A226F /* LaunchScreen.storyboard in Resources */,
 				17C274071F9C8793003A226F /* Assets.xcassets in Resources */,
 				17E37A211FA2E69C00531AD8 /* ZJLLoginRegisterViewController.xib in Resources */,
+				1724BC771FBC945A00616789 /* ZJLVideoView.xib in Resources */,
 				17E37A141FA2E07E00531AD8 /* ZJLFollowViewController.xib in Resources */,
+				1724BC791FBC948D00616789 /* ZJLVoiceView.xib in Resources */,
 				171F752C1F9E3B550002FCDB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,16 +614,20 @@
 				17AE93361FB5931D00D80057 /* ZJLAllTableViewController.m in Sources */,
 				17C274241F9CB6EA003A226F /* UIView+ZJLExtension.m in Sources */,
 				17858A591FB47234001DB562 /* ZJLWordTableViewController.m in Sources */,
+				1724BC701FBC93DE00616789 /* ZJLVideoView.m in Sources */,
 				1797F5F91FBAFD3E00D6A04F /* NSDate+ZJLExtension.m in Sources */,
 				174478CF1FA5E3D9008965E1 /* ZJLTextField.m in Sources */,
+				1724BC731FBC93EF00616789 /* ZJLVoiceView.m in Sources */,
 				174478D61FA5F41E008965E1 /* ZJLMeCell.m in Sources */,
 				174478DA1FA5F537008965E1 /* ZJLConst.m in Sources */,
 				1765515A1FA7688400106FA9 /* ZJLWebViewController.m in Sources */,
+				1724BC7C1FBCB25F00616789 /* ZJLExtensionConfig.m in Sources */,
 				17858A561FB47228001DB562 /* ZJLPictureTableViewController.m in Sources */,
 				171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */,
 				171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */,
 				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
 				171F752E1F9E3B550002FCDB /* ViewController.m in Sources */,
+				1724BC6D1FBC93C100616789 /* ZJLPictureView.m in Sources */,
 				17AE933C1FB5B36500D80057 /* ZJLHTTPSessionManager.m in Sources */,
 				171F75341F9E3D630002FCDB /* ZJLNewViewController.m in Sources */,
 				1797F5FC1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m in Sources */,

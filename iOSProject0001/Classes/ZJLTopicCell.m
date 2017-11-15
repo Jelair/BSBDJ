@@ -10,8 +10,42 @@
 #import <UIImageView+WebCache.h>
 #import "ZJLComment.h"
 #import "ZJLUser.h"
+#import "ZJLPictureView.h"
+#import "ZJLVideoView.h"
+#import "ZJLVoiceView.h"
+
+@interface ZJLTopicCell ()
+@property (nonatomic, weak) ZJLPictureView *pictureView;
+@property (nonatomic, weak) ZJLVoiceView *voiceView;
+@property (nonatomic, weak) ZJLVideoView *videoView;
+@end
 
 @implementation ZJLTopicCell
+
+#pragma mark -- lazy load
+- (ZJLPictureView *)pictureView{
+    if (!_pictureView) {
+        _pictureView = [ZJLPictureView zjl_viewFromXib];
+        [self.contentView addSubview:_pictureView];
+    }
+    return _pictureView;
+}
+
+- (ZJLVoiceView *)voiceView{
+    if (!_voiceView) {
+        _voiceView = [ZJLVoiceView zjl_viewFromXib];
+        [self.contentView addSubview:_voiceView];
+    }
+    return _voiceView;
+}
+
+- (ZJLVideoView *)videoView{
+    if (!_videoView) {
+        _videoView = [ZJLVideoView zjl_viewFromXib];
+        [self.contentView addSubview:_videoView];
+    }
+    return _videoView;
+}
 
 
 - (void)setMTopic:(ZJLTopic *)mTopic{
@@ -29,9 +63,9 @@
     [self setupButton:self.commentBtn number:self.mTopic.comment placeholder:@"评论"];
     
     //最热评论
-    if (mTopic.top_cmt.count) {
+    if (mTopic.top_cmt) {
         self.topCmtView.hidden = NO;
-        ZJLComment *comment = mTopic.top_cmt.firstObject;
+        ZJLComment *comment = mTopic.top_cmt;
         
         NSString *username = comment.user.username;
         NSString *content = comment.content;
@@ -42,14 +76,30 @@
     
     //中间内容
     if(mTopic.type == ZJLTopicTypeVideo){
-        
+        self.videoView.hidden = NO;
+        self.videoView.frame = mTopic.contentF;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
     } else if(mTopic.type == ZJLTopicTypeVoice){
-        
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = NO;
+        self.voiceView.frame = mTopic.contentF;
+        self.pictureView.hidden = YES;
     } else if(mTopic.type == ZJLTopicTypePicture){
-        
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = NO;
+        self.pictureView.mTopic = mTopic;
+        self.pictureView.frame = mTopic.contentF;
     } else if(mTopic.type == ZJLTopicTypeWord){
-        
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
     }
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
 }
 
 //设置cell按钮

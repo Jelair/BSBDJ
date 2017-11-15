@@ -100,4 +100,8 @@
     return self.x + self.width;
 }
 
++ (instancetype)zjl_viewFromXib{
+    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
+}
+
 @end

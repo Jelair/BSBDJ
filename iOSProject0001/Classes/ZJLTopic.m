@@ -9,15 +9,12 @@
 #import "ZJLTopic.h"
 #import <MJExtension.h>
 #import "ZJLComment.h"
+#import "ZJLUser.h"
 
 @implementation ZJLTopic
 
 static NSDateFormatter *fmt_;
 static NSCalendar *calendar_;
-
-+ (NSDictionary *)mj_objectClassInArray{
-    return @{@"top_cmt" : [ZJLComment class]};
-}
 
 + (void)initialize{
     //第一次使用本类时调用
@@ -58,6 +55,51 @@ static NSCalendar *calendar_;
     
 }
 
+- (CGFloat)cellHeight{
+    //性能优化
+    if (_cellHeight) {
+        return _cellHeight;
+    }
 
+    //1.头像
+    _cellHeight = 70;
+    
+    //2.文字
+    CGFloat textMaxW = [UIScreen mainScreen].bounds.size.width - 2 * ZJLMargin;
+    CGSize textMaxSize = CGSizeMake(textMaxW, MAXFLOAT);
+    //CGSize textSize = [self.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:textMaxSize];
+    CGSize textSize = [self.text boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size;
+    _cellHeight += textSize.height + ZJLMargin;
+    
+    //3.中间的内容
+    if (self.type != ZJLTopicTypeWord) {
+        CGFloat contentH = textMaxW * self.height / self.width;
+        
+        if (contentH >= [UIScreen mainScreen].bounds.size.height) { //将超长图片变为200
+            contentH = 200;
+            self.bigPicture = YES;
+        }
+        
+        self.contentF = CGRectMake(ZJLMargin, _cellHeight, textMaxW, contentH);
+        
+        _cellHeight += contentH + ZJLMargin;
+    }
+    
+    //4.最热评论
+    if (self.top_cmt) {
+        _cellHeight += 20;
+        
+        NSString *topCmtContent = [NSString stringWithFormat:@"%@ : %@",self.top_cmt.user.username, self.top_cmt.content];
+        //CGSize topCmtContentSize = [topCmtContent sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:textMaxSize];
+        CGSize topCmtContentSize = [topCmtContent boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size;
+        _cellHeight += topCmtContentSize.height + ZJLMargin;
+        
+        
+    }
+    
+    //工具条
+    _cellHeight += 35 + ZJLMargin;
+    return _cellHeight;
+}
 
 @end

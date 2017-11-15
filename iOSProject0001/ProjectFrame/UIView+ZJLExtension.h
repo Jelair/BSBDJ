@@ -21,5 +21,6 @@
 @property (nonatomic, assign)CGFloat bottom;
 @property (nonatomic, assign)CGFloat right;
 
++ (instancetype)zjl_viewFromXib;
 
 @end
