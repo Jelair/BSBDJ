@@ -44,6 +44,8 @@
 		1797F5FC1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F5FB1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m */; };
 		1797F5FF1FBB142E00D6A04F /* ZJLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F5FE1FBB142E00D6A04F /* ZJLUser.m */; };
 		1797F6021FBB146D00D6A04F /* ZJLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F6011FBB146D00D6A04F /* ZJLComment.m */; };
+		17A8C4591FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A8C4571FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m */; };
+		17A8C45A1FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A8C4581FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib */; };
 		17AE1DA91FBD48CE00A51290 /* ZJLTopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE1DA81FBD48CE00A51290 /* ZJLTopicTableViewController.m */; };
 		17AE93321FB583DB00D80057 /* ZJLRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93311FB583DB00D80057 /* ZJLRefreshHeader.m */; };
 		17AE93361FB5931D00D80057 /* ZJLAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE93351FB5931D00D80057 /* ZJLAllTableViewController.m */; };
@@ -137,6 +139,9 @@
 		1797F5FE1FBB142E00D6A04F /* ZJLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLUser.m; sourceTree = "<group>"; };
 		1797F6001FBB146D00D6A04F /* ZJLComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLComment.h; sourceTree = "<group>"; };
 		1797F6011FBB146D00D6A04F /* ZJLComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLComment.m; sourceTree = "<group>"; };
+		17A8C4561FBDC58E00DD8585 /* ZJLSeeBigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLSeeBigImageViewController.h; sourceTree = "<group>"; };
+		17A8C4571FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLSeeBigImageViewController.m; sourceTree = "<group>"; };
+		17A8C4581FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLSeeBigImageViewController.xib; sourceTree = "<group>"; };
 		17AE1DA71FBD48CE00A51290 /* ZJLTopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLTopicTableViewController.h; sourceTree = "<group>"; };
 		17AE1DA81FBD48CE00A51290 /* ZJLTopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTopicTableViewController.m; sourceTree = "<group>"; };
 		17AE93301FB583DB00D80057 /* ZJLRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRefreshHeader.h; sourceTree = "<group>"; };
@@ -277,6 +282,9 @@
 				17858A551FB47228001DB562 /* ZJLPictureTableViewController.m */,
 				17858A571FB47234001DB562 /* ZJLWordTableViewController.h */,
 				17858A581FB47234001DB562 /* ZJLWordTableViewController.m */,
+				17A8C4561FBDC58E00DD8585 /* ZJLSeeBigImageViewController.h */,
+				17A8C4571FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m */,
+				17A8C4581FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -550,6 +558,7 @@
 				1724BC771FBC945A00616789 /* ZJLVideoView.xib in Resources */,
 				17E37A141FA2E07E00531AD8 /* ZJLFollowViewController.xib in Resources */,
 				1724BC791FBC948D00616789 /* ZJLVoiceView.xib in Resources */,
+				17A8C45A1FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib in Resources */,
 				171F752C1F9E3B550002FCDB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,6 +655,7 @@
 				1797F5FC1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m in Sources */,
 				17AE93411FB5D54100D80057 /* ZJLTopicCell.m in Sources */,
 				1755DA141FA8A90900F522CC /* NSString+ZJLExtension.m in Sources */,
+				17A8C4591FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m in Sources */,
 				174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */,
 				171967991FB53AE200A5CD67 /* ZJLTopic.m in Sources */,
 				17AE1DA91FBD48CE00A51290 /* ZJLTopicTableViewController.m in Sources */,
