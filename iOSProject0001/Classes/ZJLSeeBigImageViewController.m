@@ -105,10 +105,8 @@ static NSString * const ZJLAssetCollectionTitle = @"bsbdj";
             
             //添加图片到新建相薄中
             [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-                PHAssetCollection *assetCollection = [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[assetCollectionLocalIdentifer] options:nil].lastObject;
                 PHAsset *asset = [PHAsset fetchAssetsWithLocalIdentifiers:@[assetLocalIdentifer] options:nil].lastObject;
-                
-                PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:assetCollection];
+                PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:createdAssetCollection];
                 [request addAssets:@[asset]];
             } completionHandler:^(BOOL success, NSError * _Nullable error) {
                 if (success == NO) {
