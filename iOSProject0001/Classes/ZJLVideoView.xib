@@ -15,6 +15,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="401"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="egp-el-DLl" userLabel="placeholderview">
+                    <rect key="frame" x="0.0" y="37" width="375" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="JmO-oS-xlA"/>
+                    </constraints>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQA-2c-zda">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="401"/>
                 </imageView>
@@ -41,11 +47,14 @@
             <constraints>
                 <constraint firstItem="Lyj-bV-xdc" firstAttribute="centerY" secondItem="jjm-cN-BkR" secondAttribute="centerY" id="3Aj-tI-boy"/>
                 <constraint firstAttribute="bottom" secondItem="v43-XH-Fkr" secondAttribute="bottom" id="671-4j-k8n"/>
+                <constraint firstItem="egp-el-DLl" firstAttribute="leading" secondItem="jjm-cN-BkR" secondAttribute="leading" id="FQs-wM-rPm"/>
                 <constraint firstItem="cQA-2c-zda" firstAttribute="leading" secondItem="jjm-cN-BkR" secondAttribute="leading" id="Lt1-a0-HZj"/>
                 <constraint firstAttribute="trailing" secondItem="v43-XH-Fkr" secondAttribute="trailing" id="Lzt-9Z-KZV"/>
                 <constraint firstItem="cQA-2c-zda" firstAttribute="top" secondItem="jjm-cN-BkR" secondAttribute="top" id="Xc0-pC-ycq"/>
                 <constraint firstItem="bhw-Bn-8LV" firstAttribute="top" secondItem="jjm-cN-BkR" secondAttribute="top" id="cFV-Pq-lrz"/>
+                <constraint firstAttribute="trailing" secondItem="egp-el-DLl" secondAttribute="trailing" id="cYl-0d-djy"/>
                 <constraint firstAttribute="trailing" secondItem="cQA-2c-zda" secondAttribute="trailing" id="fbN-O9-cWF"/>
+                <constraint firstItem="egp-el-DLl" firstAttribute="top" secondItem="bhw-Bn-8LV" secondAttribute="bottom" constant="20" id="iTj-wP-eZF"/>
                 <constraint firstAttribute="bottom" secondItem="cQA-2c-zda" secondAttribute="bottom" id="kV6-XB-Mlo"/>
                 <constraint firstAttribute="trailing" secondItem="bhw-Bn-8LV" secondAttribute="trailing" id="uvJ-fl-qOH"/>
                 <constraint firstItem="Lyj-bV-xdc" firstAttribute="centerX" secondItem="jjm-cN-BkR" secondAttribute="centerX" id="uzC-tJ-ZkF"/>
@@ -61,6 +70,7 @@
         </view>
     </objects>
     <resources>
+        <image name="post_placeholderImage" width="145" height="30"/>
         <image name="video-play" width="71" height="71"/>
     </resources>
 </document>

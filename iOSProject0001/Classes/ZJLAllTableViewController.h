@@ -6,8 +6,8 @@
 //  Copyright © 2017 NowOrNever. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ZJLTopicTableViewController.h"
 
-@interface ZJLAllTableViewController : UITableViewController
+@interface ZJLAllTableViewController : ZJLTopicTableViewController
 
 @end

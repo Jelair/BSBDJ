@@ -16,6 +16,7 @@
 //}ZJLTopicType;
 
 typedef NS_ENUM(NSUInteger, ZJLTopicType){
+    ZJLTopicTypeAll = 1,
     ZJLTopicTypePicture = 10,
     ZJLTopicTypeWord = 29,
     ZJLTopicTypeVoice = 31,
@@ -57,6 +58,13 @@ typedef NS_ENUM(NSUInteger, ZJLTopicType){
 @property (nonatomic, copy) NSString *middle_image;
 
 @property (nonatomic, assign) BOOL is_gif;
+
+//播放次数
+@property (nonatomic, assign) NSInteger playcount;
+//音频时长
+@property (nonatomic, assign) NSInteger voicetime;
+//视频时长
+@property (nonatomic, assign) NSInteger videotime;
 //额外的属性
 @property (nonatomic, assign) CGFloat cellHeight;
 @property (nonatomic, assign) CGRect contentF;

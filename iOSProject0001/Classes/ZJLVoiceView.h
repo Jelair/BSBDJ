@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ZJLTopic;
 @interface ZJLVoiceView : UIView
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *voiceTimeLabel;
+
+@property (nonatomic, strong) ZJLTopic *mTopic;
 
 @end

@@ -77,12 +77,14 @@
     //中间内容
     if(mTopic.type == ZJLTopicTypeVideo){
         self.videoView.hidden = NO;
+        self.videoView.mTopic = mTopic;
         self.videoView.frame = mTopic.contentF;
         self.voiceView.hidden = YES;
         self.pictureView.hidden = YES;
     } else if(mTopic.type == ZJLTopicTypeVoice){
         self.videoView.hidden = YES;
         self.voiceView.hidden = NO;
+        self.voiceView.mTopic = mTopic;
         self.voiceView.frame = mTopic.contentF;
         self.pictureView.hidden = YES;
     } else if(mTopic.type == ZJLTopicTypePicture){
