@@ -86,9 +86,6 @@ static NSString * const ZJLAssetCollectionTitle = @"bsbdj";
 
 - (void)saveImage{
     
-    
-    
-    __block NSString *assetCollectionLocalIdentifer = nil;
     __block NSString *assetLocalIdentifer = nil;
     //保存图片到相机胶卷中
     [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
@@ -96,65 +93,43 @@ static NSString * const ZJLAssetCollectionTitle = @"bsbdj";
         assetLocalIdentifer = [PHAssetCreationRequest creationRequestForAssetFromImage:self.imageView.image].placeholderForCreatedAsset.localIdentifier;
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         if (success == NO) {
-            ZJLLog(@"保存图片到相机胶卷中失败");
+            [self showError:@"保存失败"];
             return;
         }
         
-        PHAssetCollection *createdAssetCollection = [self createdAssetCollection];;
-        if (createdAssetCollection) {//相薄存在
-            
-            //添加图片到新建相薄中
-            [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-                PHAsset *asset = [PHAsset fetchAssetsWithLocalIdentifiers:@[assetLocalIdentifer] options:nil].lastObject;
-                PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:createdAssetCollection];
-                [request addAssets:@[asset]];
-            } completionHandler:^(BOOL success, NSError * _Nullable error) {
-                if (success == NO) {
-                    ZJLLog(@"添加图片失败");
-                    return;
-                } else{
-                    
-                }
-            }];
-            
-        }else{//相薄不存在
-            
-            // 创建相薄
-            [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-                assetCollectionLocalIdentifer = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:ZJLAssetCollectionTitle].placeholderForCreatedAssetCollection.localIdentifier;
-            } completionHandler:^(BOOL success, NSError * _Nullable error) {
-                if (success == NO) {
-                    ZJLLog(@"创建相薄失败");
-                    return;
-                }
-                
-                //添加图片到新建相薄中
-                [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-                    PHAssetCollection *assetCollection = [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[assetCollectionLocalIdentifer] options:nil].lastObject;
-                    PHAsset *asset = [PHAsset fetchAssetsWithLocalIdentifiers:@[assetLocalIdentifer] options:nil].lastObject;
-                    
-                    PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:assetCollection];
-                    [request addAssets:@[asset]];
-                } completionHandler:^(BOOL success, NSError * _Nullable error) {
-                    if (success == NO) {
-                        ZJLLog(@"添加图片失败");
-                        return;
-                    } else{
-                        
-                    }
-                }];
-                
-            }];
-        }
+        PHAssetCollection *createdAssetCollection = [self createdAssetCollection];
         
-        
-        
+        if (createdAssetCollection == nil) {
+            [self showError:@"创建相薄失败"];
+            return;
+        };
+        //添加图片到新建相薄中
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            //获得图片
+            PHAsset *asset = [PHAsset fetchAssetsWithLocalIdentifiers:@[assetLocalIdentifer] options:nil].lastObject;
+            //添加图片到相薄的请求
+            PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:createdAssetCollection];
+            //添加图片到相薄
+            [request addAssets:@[asset]];
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (success == NO) {
+                [self showError:@"保存失败"];
+            } else{
+                [self showSuccess:@"保存成功"];
+            }
+        }];
     }];
-    
-    
 }
 
+
+
+/**
+ 获得相薄
+
+ @return PHAssetCollection
+ */
 - (PHAssetCollection *)createdAssetCollection{
+    //从已存在相薄中查找这个应用对应的相薄
     PHFetchResult<PHAssetCollection *> *assetCollections =  [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
     
     for (PHAssetCollection *assetCollection in assetCollections) {
@@ -163,7 +138,34 @@ static NSString * const ZJLAssetCollectionTitle = @"bsbdj";
         }
     }
     
-    return nil;
+    //错误信息
+    NSError *error = nil;
+    
+    //没有找到对应相薄，创建新的相薄
+    __block NSString *assetCollectionLocalIdentifier = nil;
+    [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
+        //创建相薄的请求
+        assetCollectionLocalIdentifier = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:ZJLAssetCollectionTitle].placeholderForCreatedAssetCollection.localIdentifier;
+    } error:&error];
+    
+    if (error) {
+        return nil;
+    }
+    
+    //返回刚才创建的相薄
+    return [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[assetCollectionLocalIdentifier] options:nil].lastObject;
+}
+
+- (void)showSuccess:(NSString *)text{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [SVProgressHUD showSuccessWithStatus:text];
+    });
+}
+
+- (void)showError:(NSString *)error{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [SVProgressHUD showErrorWithStatus:error];
+    });
 }
 
 //- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
