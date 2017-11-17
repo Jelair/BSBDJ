@@ -20,8 +20,7 @@
 - (void)setRecommendTag:(ZJLRecommendTag *)recommendTag{
     _recommendTag = recommendTag;
     //头像
-    [self.imageaView sd_setImageWithURL:[NSURL URLWithString:recommendTag.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
-    
+    [self.imageaView setHeader:recommendTag.image_list];
     //名字
     self.name.text = recommendTag.theme_name;
     

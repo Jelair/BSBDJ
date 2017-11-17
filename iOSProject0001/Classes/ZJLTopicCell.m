@@ -50,7 +50,7 @@
 
 - (void)setMTopic:(ZJLTopic *)mTopic{
     _mTopic = mTopic;
-    [self.profile_image sd_setImageWithURL:[NSURL URLWithString:mTopic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.profile_image setHeader:mTopic.profile_image];
     self.nameLabel.text = mTopic.name;
     
     //时间设置

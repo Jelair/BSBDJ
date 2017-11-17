@@ -21,6 +21,8 @@
 #import "NSString+ZJLExtension.h"
 #import "NSDate+ZJLExtension.h"
 #import "NSCalendar+ZJLExtension.h"
+#import "UIImage+ZJLExtension.h"
+#import "UIImageView+ZJLExtension.h"
 
 /* 将服务器返回的数据写入plist */
 #define ZJLWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/nowornever/Desktop/%@",filename] atomically:YES];
