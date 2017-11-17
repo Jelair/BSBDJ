@@ -64,16 +64,16 @@ static NSString * const ZJLTopicCellId = @"topic";
     params[@"a"] = @"list";
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
-    
+    __weak typeof(self) weakSelf = self;
     [self.manager GET:ZJLCommonURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        self.maxtime = responseObject[@"info"][@"maxtime"];
-        self.topics = [ZJLTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        [self.tableView reloadData];
-        [self.tableView.mj_header endRefreshing];
+        weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
+        weakSelf.topics = [ZJLTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [weakSelf.tableView reloadData];
+        [weakSelf.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_header endRefreshing];
     }];
 }
 
@@ -87,17 +87,17 @@ static NSString * const ZJLTopicCellId = @"topic";
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     params[@"maxtime"] = self.maxtime;
-    
+    __weak typeof(self) weakSelf = self;
     [self.manager GET:ZJLCommonURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        self.maxtime = responseObject[@"info"][@"maxtime"];
+        weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         NSArray<ZJLTopic *> * moretopics = [ZJLTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        [self.topics addObjectsFromArray:moretopics];
-        [self.tableView reloadData];
-        [self.tableView.mj_footer endRefreshing];
+        [weakSelf.topics addObjectsFromArray:moretopics];
+        [weakSelf.tableView reloadData];
+        [weakSelf.tableView.mj_footer endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self.tableView.mj_footer endRefreshing];
+        [weakSelf.tableView.mj_footer endRefreshing];
     }];
 }
 

@@ -7,13 +7,14 @@
 //
 
 #import "ZJLEssenceViewController.h"
-#import "ViewController.h"
 
 #import "ZJLAllTableViewController.h"
 #import "ZJLVideoTableViewController.h"
 #import "ZJLMusicTableViewController.h"
 #import "ZJLPictureTableViewController.h"
 #import "ZJLWordTableViewController.h"
+
+#import "ZJLRecommendTagController.h"
 
 @interface ZJLEssenceViewController ()<UIScrollViewDelegate>
 @property (nonatomic, weak) UIButton *selectedTitleButton;
@@ -136,7 +137,7 @@
 }
 
 - (void)navleftbtn_click{
-    [self.navigationController pushViewController:[[ViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[ZJLRecommendTagController alloc] init] animated:YES];
 }
 
 - (void)setChildView{

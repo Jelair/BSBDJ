@@ -44,6 +44,10 @@
 		1797F5FC1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F5FB1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m */; };
 		1797F5FF1FBB142E00D6A04F /* ZJLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F5FE1FBB142E00D6A04F /* ZJLUser.m */; };
 		1797F6021FBB146D00D6A04F /* ZJLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797F6011FBB146D00D6A04F /* ZJLComment.m */; };
+		179D0FCA1FBEBAAE001C0F7A /* ZJLRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 179D0FC91FBEBAAE001C0F7A /* ZJLRecommendTag.m */; };
+		179D0FCE1FBEBBEA001C0F7A /* ZJLRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 179D0FCC1FBEBBEA001C0F7A /* ZJLRecommendTagCell.m */; };
+		179D0FCF1FBEBBEA001C0F7A /* ZJLRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179D0FCD1FBEBBEA001C0F7A /* ZJLRecommendTagCell.xib */; };
+		179D0FD21FBEC0A1001C0F7A /* ZJLRecommendTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179D0FD11FBEC0A1001C0F7A /* ZJLRecommendTagController.m */; };
 		17A8C4591FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A8C4571FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m */; };
 		17A8C45A1FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A8C4581FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib */; };
 		17AE1DA91FBD48CE00A51290 /* ZJLTopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE1DA81FBD48CE00A51290 /* ZJLTopicTableViewController.m */; };
@@ -139,6 +143,13 @@
 		1797F5FE1FBB142E00D6A04F /* ZJLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLUser.m; sourceTree = "<group>"; };
 		1797F6001FBB146D00D6A04F /* ZJLComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLComment.h; sourceTree = "<group>"; };
 		1797F6011FBB146D00D6A04F /* ZJLComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLComment.m; sourceTree = "<group>"; };
+		179D0FC81FBEBAAE001C0F7A /* ZJLRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRecommendTag.h; sourceTree = "<group>"; };
+		179D0FC91FBEBAAE001C0F7A /* ZJLRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLRecommendTag.m; sourceTree = "<group>"; };
+		179D0FCB1FBEBBEA001C0F7A /* ZJLRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRecommendTagCell.h; sourceTree = "<group>"; };
+		179D0FCC1FBEBBEA001C0F7A /* ZJLRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLRecommendTagCell.m; sourceTree = "<group>"; };
+		179D0FCD1FBEBBEA001C0F7A /* ZJLRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLRecommendTagCell.xib; sourceTree = "<group>"; };
+		179D0FD01FBEC0A1001C0F7A /* ZJLRecommendTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLRecommendTagController.h; sourceTree = "<group>"; };
+		179D0FD11FBEC0A1001C0F7A /* ZJLRecommendTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLRecommendTagController.m; sourceTree = "<group>"; };
 		17A8C4561FBDC58E00DD8585 /* ZJLSeeBigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLSeeBigImageViewController.h; sourceTree = "<group>"; };
 		17A8C4571FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLSeeBigImageViewController.m; sourceTree = "<group>"; };
 		17A8C4581FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLSeeBigImageViewController.xib; sourceTree = "<group>"; };
@@ -198,6 +209,8 @@
 				1797F5FE1FBB142E00D6A04F /* ZJLUser.m */,
 				1797F6001FBB146D00D6A04F /* ZJLComment.h */,
 				1797F6011FBB146D00D6A04F /* ZJLComment.m */,
+				179D0FC81FBEBAAE001C0F7A /* ZJLRecommendTag.h */,
+				179D0FC91FBEBAAE001C0F7A /* ZJLRecommendTag.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -313,6 +326,9 @@
 				1724BC711FBC93EF00616789 /* ZJLVoiceView.h */,
 				1724BC721FBC93EF00616789 /* ZJLVoiceView.m */,
 				1724BC781FBC948D00616789 /* ZJLVoiceView.xib */,
+				179D0FCB1FBEBBEA001C0F7A /* ZJLRecommendTagCell.h */,
+				179D0FCC1FBEBBEA001C0F7A /* ZJLRecommendTagCell.m */,
+				179D0FCD1FBEBBEA001C0F7A /* ZJLRecommendTagCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -419,6 +435,8 @@
 			children = (
 				17E6EC1F1F9F92EB00051F0A /* ZJLRecommendViewController.h */,
 				17E6EC201F9F92EB00051F0A /* ZJLRecommendViewController.m */,
+				179D0FD01FBEC0A1001C0F7A /* ZJLRecommendTagController.h */,
+				179D0FD11FBEC0A1001C0F7A /* ZJLRecommendTagController.m */,
 			);
 			name = Recommend;
 			sourceTree = "<group>";
@@ -559,6 +577,7 @@
 				17E37A141FA2E07E00531AD8 /* ZJLFollowViewController.xib in Resources */,
 				1724BC791FBC948D00616789 /* ZJLVoiceView.xib in Resources */,
 				17A8C45A1FBDC58E00DD8585 /* ZJLSeeBigImageViewController.xib in Resources */,
+				179D0FCF1FBEBBEA001C0F7A /* ZJLRecommendTagCell.xib in Resources */,
 				171F752C1F9E3B550002FCDB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,6 +650,7 @@
 				17858A531FB47218001DB562 /* ZJLMusicTableViewController.m in Sources */,
 				1797F5FF1FBB142E00D6A04F /* ZJLUser.m in Sources */,
 				174478D21FA5E5DC008965E1 /* UITextField+ZJLExtension.m in Sources */,
+				179D0FCE1FBEBBEA001C0F7A /* ZJLRecommendTagCell.m in Sources */,
 				1765515E1FA770ED00106FA9 /* ZJLSettingViewController.m in Sources */,
 				17AE93391FB5A00500D80057 /* ZJLRefreshFooter.m in Sources */,
 				17AE93361FB5931D00D80057 /* ZJLAllTableViewController.m in Sources */,
@@ -652,8 +672,10 @@
 				1724BC6D1FBC93C100616789 /* ZJLPictureView.m in Sources */,
 				17AE933C1FB5B36500D80057 /* ZJLHTTPSessionManager.m in Sources */,
 				171F75341F9E3D630002FCDB /* ZJLNewViewController.m in Sources */,
+				179D0FCA1FBEBAAE001C0F7A /* ZJLRecommendTag.m in Sources */,
 				1797F5FC1FBAFEDD00D6A04F /* NSCalendar+ZJLExtension.m in Sources */,
 				17AE93411FB5D54100D80057 /* ZJLTopicCell.m in Sources */,
+				179D0FD21FBEC0A1001C0F7A /* ZJLRecommendTagController.m in Sources */,
 				1755DA141FA8A90900F522CC /* NSString+ZJLExtension.m in Sources */,
 				17A8C4591FBDC58E00DD8585 /* ZJLSeeBigImageViewController.m in Sources */,
 				174478DD1FA5FF65008965E1 /* ZJLMeFootview.m in Sources */,

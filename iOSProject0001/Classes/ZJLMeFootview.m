@@ -21,13 +21,14 @@
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         params[@"a"] = @"square";
         params[@"c"] = @"topic";
+        __weak typeof(self) weakSelf = self;
         [[ZJLHTTPSessionManager manager] GET:ZJLCommonURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             //ZJLLog(@"%@",responseObject);
             //[responseObject writeToFile:@"/Users/nowornever/Desktop/me.plist" atomically:YES];
             NSArray *squares = [ZJLMeSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
-            [self createSquares:squares];
+            [weakSelf createSquares:squares];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
         }];
