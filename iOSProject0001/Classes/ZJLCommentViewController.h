@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ZJLTopic;
 
 @interface ZJLCommentViewController : UIViewController
+
+@property (nonatomic, strong) ZJLTopic *mTopic;
 
 @end

@@ -124,6 +124,7 @@ static NSString * const ZJLTopicCellId = @"topic";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     ZJLCommentViewController *vc = [[ZJLCommentViewController alloc] init];
+    vc.mTopic = self.topics[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
