@@ -15,6 +15,7 @@
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         self.textLabel.textColor = [UIColor darkGrayColor];
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
     return self;

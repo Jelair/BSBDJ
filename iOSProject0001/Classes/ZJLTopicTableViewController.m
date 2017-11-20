@@ -13,6 +13,7 @@
 #import "ZJLRefreshHeader.h"
 #import "ZJLRefreshFooter.h"
 #import "ZJLHTTPSessionManager.h"
+#import "ZJLCommentViewController.h"
 
 @interface ZJLTopicTableViewController ()
 
@@ -119,6 +120,11 @@ static NSString * const ZJLTopicCellId = @"topic";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     ZJLLog(@"%f",self.topics[indexPath.row].cellHeight);
     return self.topics[indexPath.row].cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ZJLCommentViewController *vc = [[ZJLCommentViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

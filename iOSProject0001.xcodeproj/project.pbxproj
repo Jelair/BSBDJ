@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		171967991FB53AE200A5CD67 /* ZJLTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 171967981FB53AE200A5CD67 /* ZJLTopic.m */; };
+		171CD1731FC3076C008718CE /* ZJLCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CD1711FC3076C008718CE /* ZJLCommentViewController.m */; };
+		171CD1741FC3076C008718CE /* ZJLCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 171CD1721FC3076C008718CE /* ZJLCommentViewController.xib */; };
 		171F75211F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F75201F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m */; };
 		171F752B1F9E3B550002FCDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F75251F9E3B550002FCDB /* AppDelegate.m */; };
 		171F752C1F9E3B550002FCDB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 171F75261F9E3B550002FCDB /* Info.plist */; };
@@ -77,6 +79,9 @@
 		0F13F3BA766748C68EEAC7ED /* libPods-iOSProject0001.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSProject0001.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		171967971FB53AE200A5CD67 /* ZJLTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLTopic.h; sourceTree = "<group>"; };
 		171967981FB53AE200A5CD67 /* ZJLTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLTopic.m; sourceTree = "<group>"; };
+		171CD1701FC3076C008718CE /* ZJLCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLCommentViewController.h; sourceTree = "<group>"; };
+		171CD1711FC3076C008718CE /* ZJLCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLCommentViewController.m; sourceTree = "<group>"; };
+		171CD1721FC3076C008718CE /* ZJLCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJLCommentViewController.xib; sourceTree = "<group>"; };
 		171F751F1F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZJLExtension.h"; sourceTree = "<group>"; };
 		171F75201F9E2CB80002FCDB /* UIBarButtonItem+ZJLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZJLExtension.m"; sourceTree = "<group>"; };
 		171F75241F9E3B550002FCDB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -416,6 +421,9 @@
 				17858A4A1FB471BB001DB562 /* ViewControllers */,
 				171F75351F9E3D810002FCDB /* ZJLEssenceViewController.h */,
 				171F75361F9E3D810002FCDB /* ZJLEssenceViewController.m */,
+				171CD1701FC3076C008718CE /* ZJLCommentViewController.h */,
+				171CD1711FC3076C008718CE /* ZJLCommentViewController.m */,
+				171CD1721FC3076C008718CE /* ZJLCommentViewController.xib */,
 			);
 			name = Essence;
 			sourceTree = "<group>";
@@ -577,6 +585,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171CD1741FC3076C008718CE /* ZJLCommentViewController.xib in Resources */,
 				1765515B1FA7688400106FA9 /* ZJLWebViewController.xib in Resources */,
 				17AE93421FB5D54100D80057 /* ZJLTopicCell.xib in Resources */,
 				1724BC751FBC940A00616789 /* ZJLPictureView.xib in Resources */,
@@ -677,6 +686,7 @@
 				17858A561FB47228001DB562 /* ZJLPictureTableViewController.m in Sources */,
 				171F753A1F9E3DA50002FCDB /* ZJLMeViewController.m in Sources */,
 				171F75371F9E3D810002FCDB /* ZJLEssenceViewController.m in Sources */,
+				171CD1731FC3076C008718CE /* ZJLCommentViewController.m in Sources */,
 				17E37A241FA2FA8000531AD8 /* ZJLQuickButton.m in Sources */,
 				171F752E1F9E3B550002FCDB /* ViewController.m in Sources */,
 				1724BC6D1FBC93C100616789 /* ZJLPictureView.m in Sources */,
