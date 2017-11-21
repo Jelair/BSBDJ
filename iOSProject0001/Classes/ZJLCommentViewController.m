@@ -14,6 +14,8 @@
 #import "ZJLComment.h"
 #import <MJExtension.h>
 
+#define ZJLCommentSectionHeaderFont [UIFont systemFontOfSize:15]
+
 @interface ZJLCommentViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomMargin;
 @property (nonatomic, strong) ZJLHTTPSessionManager *manager;
@@ -54,6 +56,7 @@ static NSString * const ZJLCommentCellId = @"ZJLCommentCell";
     self.tableView.backgroundColor = ZJLCommonBg;
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.sectionHeaderHeight = ZJLCommentSectionHeaderFont.lineHeight + ZJLMargin;
 }
 
 - (void)setupBase{
@@ -152,6 +155,27 @@ static NSString * const ZJLCommentCellId = @"ZJLCommentCell";
 }
 
 #pragma mark -- <UITableViewDelegate>
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIButton *button = [[UIButton alloc] init];
+    button.backgroundColor = tableView.backgroundColor;
+    
+    button.contentEdgeInsets = UIEdgeInsetsMake(0, ZJLMargin, 0, 0);
+    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    
+    button.titleLabel.font = ZJLCommentSectionHeaderFont;
+    [button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    if (section == 0 && self.hotestComments.count) {
+
+        [button setTitle:@"最热评论" forState:UIControlStateNormal];
+    }else{
+
+        [button setTitle:@"最新评论" forState:UIControlStateNormal];
+    }
+    
+    return button;
+}
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44;
 }
